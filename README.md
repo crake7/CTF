@@ -9,7 +9,7 @@ Each folder is a mélange of data collected while solving the challenges. You wi
 
 -Recon data collected (mostly) during Enumeration.
 
-Use it as a add-on when solving these challenges. These information will guide you to the right direction but will not give you the answer to the problems. 
+Use it as an add-on when solving these challenges. These information will guide you to the right direction but will not give you the answer to the problems. 
 For any questions, feel free to message me. 
 
 Have fun! 
