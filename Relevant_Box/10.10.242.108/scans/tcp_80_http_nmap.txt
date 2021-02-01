@@ -1,0 +1,104 @@
+# Nmap 7.91SVN scan initiated Sun Jan 17 12:19:24 2021 as: nmap -vv --reason -Pn -sV -p 80 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/tcp_80_http_nmap.txt -oX /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/xml/tcp_80_http_nmap.xml 10.10.242.108
+Nmap scan report for 10.10.242.108
+Host is up, received user-set (0.100s latency).
+Scanned at 2021-01-17 12:19:27 EST for 97s
+
+PORT   STATE SERVICE REASON          VERSION
+80/tcp open  http    syn-ack ttl 125 Microsoft IIS httpd 10.0
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-chrono: Request times for /; avg: 1237.98ms; min: 201.67ms; max: 3282.41ms
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.242.108
+|     
+|     Path: http://10.10.242.108:80/
+|     Line number: 7
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|_        -->
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-date: Sun, 17 Jan 2021 17:19:34 GMT; -4s from local time.
+|_http-devframework: ASP.NET detected. Found related header.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-errors: Couldn't find any error pages.
+|_http-feed: Couldn't find any feeds.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-headers: 
+|   Content-Type: text/html
+|   Last-Modified: Sat, 25 Jul 2020 15:05:21 GMT
+|   Accept-Ranges: bytes
+|   ETag: "2db43349562d61:0"
+|   Server: Microsoft-IIS/10.0
+|   X-Powered-By: ASP.NET
+|   Date: Sun, 17 Jan 2021 17:19:34 GMT
+|   Connection: close
+|   Content-Length: 703
+|   
+|_  (Request type: GET)
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-malware-host: Host appears to be clean
+| http-methods: 
+|_  Supported Methods: HEAD
+|_http-mobileversion-checker: No mobile version detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-server-header: Microsoft-IIS/10.0
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1
+|   Longest directory structure:
+|     Depth: 0
+|     Dir: /
+|   Total files found (by extension):
+|_    Other: 1
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: IIS Windows Server
+|_http-traceroute: ERROR: Script execution failed (use -d to debug)
+| http-useragent-tester: 
+|   Allowed User Agents: 
+|     libcurl-agent/1.0
+|     PHP/
+|     GT::WWW
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|   Change in Status Code: 
+|     lwp-trivial: 200
+|     PECL::HTTP: 200
+|     libwww: 200
+|     URI::Fetch: 200
+|     WWW-Mechanize/1.34: 200
+|     Python-urllib/2.5: 200
+|     Snoopy: 200
+|     http client: 200
+|     PHPCrawl: 200
+|     Wget/1.13.4 (linux-gnu): 200
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html): 200
+|_    Zend_Http_Client: 200
+| http-vhosts: 
+| db : 200
+| citrix : 200
+|_126 names had status ERROR
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_http-vuln-wnr1000-creds: ERROR: Script execution failed (use -d to debug)
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/local/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 17 12:21:04 2021 -- 1 IP address (1 host up) scanned in 99.44 seconds

@@ -1,0 +1,119 @@
+# Nmap 7.91SVN scan initiated Sat Jan  9 09:47:13 2021 as: nmap -A -vv -Pn -oA initial 10.10.0.156
+Increasing send delay for 10.10.0.156 from 0 to 5 due to 256 out of 852 dropped probes since last increase.
+adjust_timeouts2: packet supposedly had rtt of -371224 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -371224 microseconds.  Ignoring time.
+Nmap scan report for 10.10.0.156
+Host is up, received user-set (0.096s latency).
+Scanned at 2021-01-09 09:47:14 EST for 89s
+Not shown: 988 closed ports
+Reason: 988 resets
+PORT      STATE SERVICE            REASON          VERSION
+80/tcp    open  http               syn-ack ttl 125 Microsoft IIS httpd 8.5
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/8.5
+|_http-title: Site doesn't have a title (text/html).
+135/tcp   open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+139/tcp   open  netbios-ssn        syn-ack ttl 125 Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       syn-ack ttl 125 Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open  ssl/ms-wbt-server? syn-ack ttl 125
+| ssl-cert: Subject: commonName=steelmountain
+| Issuer: commonName=steelmountain
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2020-10-11T19:04:29
+| Not valid after:  2021-04-12T19:04:29
+| MD5:   cf4c 483f 7654 c778 e6b9 0144 1de0 18c9
+| SHA-1: ed4f 6cac 8059 d465 9e7b 7730 8ac4 56a4 67df d29c
+| -----BEGIN CERTIFICATE-----
+| MIIC3jCCAcagAwIBAgIQTSEsLdxczKpF0fumLKyoizANBgkqhkiG9w0BAQUFADAY
+| MRYwFAYDVQQDEw1zdGVlbG1vdW50YWluMB4XDTIwMTAxMTE5MDQyOVoXDTIxMDQx
+| MjE5MDQyOVowGDEWMBQGA1UEAxMNc3RlZWxtb3VudGFpbjCCASIwDQYJKoZIhvcN
+| AQEBBQADggEPADCCAQoCggEBAKs9w98zJphDfGuwZ8v5eJx/kt1+3NSGRSrp0GQU
+| AoXCs+OValumdVKrbR0G0s3yy14ASUSR3dYgJ/w779z2KfElcWf63zJw37dvv//v
+| nNXuaWhxEg6bejvnUXuNj1SKAo7v93t6VSSvhPPvSZ3uAJmsC1KjhTCKZ8dIiO3O
+| q5az+MvfDCXxzV1pS8s3/lAP9pVQHa6pfG2ResgvDQ5KlcaFpm/9aQ7JggMB4fkz
+| zC/gekzwd3kG4snVhq2xrATIKX6FjUMjPwwazI77cvtXrD8+ZZzVTftk0/P2EqyK
+| pWUmqoU8xPveQub2C89yVm/S/lqdOVKmE752GFdgt/ysNOcCAwEAAaMkMCIwEwYD
+| VR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBBQUAA4IB
+| AQAe02rGyAVCAQ0woSx3VX+R9Nnyts8i1yWBsLwsn4IAMFOG1YLyBpPm+TYRymqK
+| 4G4Ik2AGH346BwKVaWpTfiuAjDb3OUayW9ewwJRsACFpsltA/B1Qp5qqDI1lNEi7
+| 20Gn1bJ3tBsdDSMsZYKYLDI39unoB9izEZq/s2XrJdzEOUFIBs1CQnORDyYKkbvF
+| 4RPIwW9kosBw4aI++ZRD8w0cCXX0/tvP2SJTm9vUWaVF1SR+Akk02u5b+sZHXHTd
+| GUCPftRY/njFZvNiK42eagkmqRQHeDoMdYkd4zMs6i/HgQ9cdj0jf4wxmlrneJ46
+| fq7nIrzi0iGdYdrgUkrQwi/J
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-01-09T14:48:43+00:00; 0s from scanner time.
+8080/tcp  open  http               syn-ack ttl 125 HttpFileServer httpd 2.3
+|_http-favicon: Unknown favicon MD5: 759792EDD4EF8E6BC2D1877D27153CB1
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-server-header: HFS 2.3
+|_http-title: HFS /
+49152/tcp open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+49153/tcp open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+49154/tcp open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+49155/tcp open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+49157/tcp open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+49163/tcp open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91SVN%E=4%D=1/9%OT=80%CT=1%CU=32893%PV=Y%DS=4%DC=T%G=Y%TM=5FF9C
+OS:24B%P=x86_64-unknown-linux-gnu)SEQ(SP=108%GCD=1%ISR=10A%TI=I%CI=I%II=I%S
+OS:S=S%TS=7)SEQ(SP=108%GCD=1%ISR=10A%CI=I%TS=7)OPS(O1=M506NW8ST11%O2=M506NW
+OS:8ST11%O3=M506NW8NNT11%O4=M506NW8ST11%O5=M506NW8ST11%O6=M506ST11)WIN(W1=2
+OS:000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)ECN(R=Y%DF=Y%T=80%W=2000%O=M
+OS:506NW8NNS%CC=Y%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=Y%T=8
+OS:0%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=80%W=0%S=Z%A=O%F=AR%O=%RD=0%
+OS:Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=80%W=0%S=Z%
+OS:A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T7(R=Y%
+OS:DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIP
+OS:L=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=80%CD=Z)
+
+Uptime guess: 0.016 days (since Sat Jan  9 09:26:00 2021)
+Network Distance: 4 hops
+TCP Sequence Prediction: Difficulty=264 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| nbstat: NetBIOS name: STEELMOUNTAIN, NetBIOS user: <unknown>, NetBIOS MAC: 02:1a:91:00:78:b7 (unknown)
+| Names:
+|   STEELMOUNTAIN<00>    Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   STEELMOUNTAIN<20>    Flags: <unique><active>
+| Statistics:
+|   02 1a 91 00 78 b7 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 16756/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 45459/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 18592/udp): CLEAN (Timeout)
+|   Check 4 (port 55414/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-01-09T14:48:38
+|_  start_date: 2021-01-09T14:26:23
+
+TRACEROUTE (using port 111/tcp)
+HOP RTT      ADDRESS
+1   26.97 ms 10.6.0.1
+2   ... 3
+4   96.08 ms 10.10.0.156
+
+Read data files from: /usr/local/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan  9 09:48:43 2021 -- 1 IP address (1 host up) scanned in 90.43 seconds

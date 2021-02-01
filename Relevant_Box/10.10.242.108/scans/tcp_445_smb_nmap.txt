@@ -1,0 +1,11 @@
+# Nmap 7.91SVN scan initiated Sun Jan 17 12:19:39 2021 as: nmap -vv --reason -Pn -sV -p 445 "--script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" --script-args=unsafe=1 -oN /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/tcp_445_smb_nmap.txt -oX /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/xml/tcp_445_smb_nmap.xml 10.10.242.108
+Nmap scan report for 10.10.242.108
+Host is up, received user-set.
+Scanned at 2021-01-17 12:19:39 EST for 2s
+
+PORT    STATE    SERVICE      REASON      VERSION
+445/tcp filtered microsoft-ds no-response
+
+Read data files from: /usr/local/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 17 12:19:41 2021 -- 1 IP address (1 host up) scanned in 2.78 seconds

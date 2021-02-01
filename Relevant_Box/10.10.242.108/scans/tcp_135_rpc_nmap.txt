@@ -1,0 +1,11 @@
+# Nmap 7.91SVN scan initiated Sun Jan 17 12:19:25 2021 as: nmap -vv --reason -Pn -sV -p 135 --script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/tcp_135_rpc_nmap.txt -oX /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/xml/tcp_135_rpc_nmap.xml 10.10.242.108
+Nmap scan report for 10.10.242.108
+Host is up, received user-set (0.095s latency).
+Scanned at 2021-01-17 12:19:27 EST for 22s
+
+PORT    STATE SERVICE REASON          VERSION
+135/tcp open  msrpc?  syn-ack ttl 125
+
+Read data files from: /usr/local/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 17 12:19:49 2021 -- 1 IP address (1 host up) scanned in 24.71 seconds

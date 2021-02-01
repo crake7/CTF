@@ -1,0 +1,17 @@
+# Nmap 7.91SVN scan initiated Tue Jan 12 12:37:47 2021 as: nmap -p 445 -vv --script=smb-enum-users.nse -oN port445_enum_users 10.10.18.186
+Nmap scan report for 10.10.18.186
+Host is up, received timestamp-reply ttl 61 (0.095s latency).
+Scanned at 2021-01-12 12:37:48 EST for 6s
+
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack ttl 61
+
+Host script results:
+| smb-enum-users: 
+|   SKYNET\milesdyson (RID: 1000)
+|     Full name:   
+|     Description: 
+|_    Flags:       Normal user account
+
+Read data files from: /usr/local/bin/../share/nmap
+# Nmap done at Tue Jan 12 12:37:54 2021 -- 1 IP address (1 host up) scanned in 6.94 seconds

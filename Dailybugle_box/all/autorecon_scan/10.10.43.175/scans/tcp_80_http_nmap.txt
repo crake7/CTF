@@ -1,0 +1,304 @@
+# Nmap 7.91SVN scan initiated Wed Jan 13 12:36:53 2021 as: nmap -vv --reason -Pn -sV -p 80 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /home/kali/tryhackme/Dailybugle_box/autorecon_scan/10.10.43.175/scans/tcp_80_http_nmap.txt -oX /home/kali/tryhackme/Dailybugle_box/autorecon_scan/10.10.43.175/scans/xml/tcp_80_http_nmap.xml 10.10.43.175
+Nmap scan report for 10.10.43.175
+Host is up, received user-set (0.098s latency).
+Scanned at 2021-01-13 12:36:54 EST for 212s
+
+PORT   STATE SERVICE REASON         VERSION
+80/tcp open  http    syn-ack ttl 61 Apache httpd 2.4.6 ((CentOS) PHP/5.6.40)
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.43.175
+|   url                                                                      method
+|   http://10.10.43.175:80/                                                  FORM
+|   http://10.10.43.175:80/index.php/2-uncategorised                         FORM
+|   http://10.10.43.175:80/index.php/2-uncategorised/1-spider-man-robs-bank  FORM
+|_  http://10.10.43.175:80/index.php                                         FORM
+| http-backup-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.43.175
+|_  http://10.10.43.175:80/index.php/2-uncategorised/index.bak
+|_http-chrono: Request times for /; avg: 1187.84ms; min: 851.40ms; max: 1606.86ms
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.43.175
+|     
+|     Path: http://10.10.43.175:80/media/jui/js/jquery.min.js?787ff2be3d28e0eefd8e0930f878dbca
+|     Line number: 1
+|     Comment: 
+|         /*! jQuery v1.12.4 | (c) jQuery Foundation | jquery.org/license */
+|     
+|     Path: http://10.10.43.175:80/media/jui/js/bootstrap.min.js?787ff2be3d28e0eefd8e0930f878dbca
+|     Line number: 1
+|     Comment: 
+|         /*!
+|          * Bootstrap.js by @fat & @mdo
+|          * Copyright 2012 Twitter, Inc.
+|          * http://www.apache.org/licenses/LICENSE-2.0.txt
+|          *
+|          * Custom version for Joomla!
+|          */
+|     
+|     Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;template=protostar&amp;link=a143f1f184b68faa80904068a818809edefb2174
+|     Line number: 48
+|     Comment: 
+|         <!-- Banner -->
+|     
+|     Path: http://10.10.43.175:80/index.php?format=feed&amp;type=atom
+|     Line number: 2
+|     Comment: 
+|         <!-- generator="Joomla! - Open Source Content Management" -->
+|     
+|     Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;template=protostar&amp;link=a143f1f184b68faa80904068a818809edefb2174
+|     Line number: 82
+|     Comment: 
+|         <!-- Footer -->
+|     
+|     Path: http://10.10.43.175:80/index.php/component/users/?view=remind&amp;Itemid=101
+|     Line number: 173
+|     Comment: 
+|         <!-- End Right Sidebar -->
+|     
+|     Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;template=protostar&amp;link=a143f1f184b68faa80904068a818809edefb2174
+|     Line number: 31
+|     Comment: 
+|         <!--[if lt IE 9]><script src="/media/jui/js/html5.js"></script><![endif]-->
+|     
+|     Path: http://10.10.43.175:80/media/jui/js/html5.js?787ff2be3d28e0eefd8e0930f878dbca
+|     Line number: 1
+|     Comment: 
+|         /**
+|         * @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+|         */
+|     
+|     Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;template=protostar&amp;link=a143f1f184b68faa80904068a818809edefb2174
+|     Line number: 34
+|     Comment: 
+|         <!-- Body -->
+|     
+|     Path: http://10.10.43.175:80/media/system/js/caption.js?787ff2be3d28e0eefd8e0930f878dbca
+|     Line number: 1
+|     Comment: 
+|         /*
+|                 GNU General Public License version 2 or later; see LICENSE.txt
+|         */
+|     
+|     Path: http://10.10.43.175:80/templates/protostar/js/template.js?787ff2be3d28e0eefd8e0930f878dbca
+|     Line number: 1
+|     Comment: 
+|         /**
+|          * @package     Joomla.Site
+|          * @subpackage  Templates.protostar
+|          * @copyright   Copyright (C) 2005 - 2017 Open Source Matters, Inc. All rights reserved.
+|          * @license     GNU General Public License version 2 or later; see LICENSE.txt
+|          * @since       3.2
+|          */
+|     
+|     Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;template=protostar&amp;link=a143f1f184b68faa80904068a818809edefb2174
+|     Line number: 77
+|     Comment: 
+|         <!-- End Content -->
+|     
+|     Path: http://10.10.43.175:80/index.php/component/users/?view=remind&amp;Itemid=101
+|     Line number: 48
+|     Comment: 
+|         <!--[if lt IE 9]><script src="/media/jui/js/html5.js?787ff2be3d28e0eefd8e0930f878dbca"></script><![endif]-->
+|     
+|     Path: http://10.10.43.175:80/index.php/component/users/?view=remind&amp;Itemid=101
+|     Line number: 121
+|     Comment: 
+|         <!-- Begin Right Sidebar -->
+|     
+|     Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;template=protostar&amp;link=a143f1f184b68faa80904068a818809edefb2174
+|     Line number: 37
+|     Comment: 
+|         <!-- Header -->
+|     
+|     Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;template=protostar&amp;link=a143f1f184b68faa80904068a818809edefb2174
+|     Line number: 53
+|     Comment: 
+|         <!-- Begin Content -->
+|     
+|     Path: http://10.10.43.175:80/index.php/2-uncategorised
+|     Line number: 157
+|     Comment: 
+|         <!-- end items-leading -->
+|     
+|     Path: http://10.10.43.175:80/index.php/component/users/?view=remind&amp;Itemid=101
+|     Line number: 38
+|     Comment: 
+|_        <!--[if lt IE 9]><script src="/media/system/js/polyfill.event.js?787ff2be3d28e0eefd8e0930f878dbca"></script><![endif]-->
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.43.175
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.10.43.175:80/
+|     Form id: login-form
+|     Form action: /index.php
+|     
+|     Path: http://10.10.43.175:80/index.php/2-uncategorised
+|     Form id: login-form
+|     Form action: /index.php
+|     
+|     Path: http://10.10.43.175:80/index.php/2-uncategorised/1-spider-man-robs-bank
+|     Form id: login-form
+|     Form action: /index.php
+|     
+|     Path: http://10.10.43.175:80/index.php
+|     Form id: login-form
+|     Form action: /index.php
+|     
+|     Path: http://10.10.43.175:80/index.php/component/users/?view=reset&amp;Itemid=101
+|     Form id: user-registration
+|     Form action: /index.php/component/users/?task=reset.request&Itemid=101
+|     
+|     Path: http://10.10.43.175:80/index.php/component/users/?view=reset&amp;Itemid=101
+|     Form id: login-form
+|     Form action: /index.php/component/users/?Itemid=101
+|     
+|     Path: http://10.10.43.175:80/index.php/component/users/?view=remind&amp;Itemid=101
+|     Form id: user-registration
+|     Form action: /index.php/component/users/?task=remind.remind&Itemid=101
+|     
+|     Path: http://10.10.43.175:80/index.php/component/users/?view=remind&amp;Itemid=101
+|     Form id: login-form
+|_    Form action: /index.php/component/users/?Itemid=101
+|_http-date: Wed, 13 Jan 2021 17:37:07 GMT; -3s from local time.
+|_http-devframework: Joomla detected. Found common traces on /
+| http-dombased-xss: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.43.175
+|   Found the following indications of potential DOM based XSS: 
+|     
+|     Source: window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no')
+|_    Pages: http://10.10.43.175:80/, http://10.10.43.175:80/index.php/2-uncategorised, http://10.10.43.175:80/index.php/2-uncategorised/1-spider-man-robs-bank, http://10.10.43.175:80/index.php
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+| http-enum: 
+|   /administrator/: Possible admin folder
+|   /administrator/index.php: Possible admin folder
+|   /robots.txt: Robots file
+|   /administrator/manifests/files/joomla.xml: Joomla version 3.7.0
+|   /language/en-GB/en-GB.xml: Joomla version 3.7.0
+|   /htaccess.txt: Joomla!
+|   /README.txt: Interesting, a readme.
+|   /bin/: Potentially interesting folder
+|   /cache/: Potentially interesting folder
+|   /icons/: Potentially interesting folder w/ directory listing
+|   /images/: Potentially interesting folder
+|   /includes/: Potentially interesting folder
+|   /libraries/: Potentially interesting folder
+|   /modules/: Potentially interesting folder
+|   /templates/: Potentially interesting folder
+|_  /tmp/: Potentially interesting folder
+|_http-errors: ERROR: Script execution failed (use -d to debug)
+|_http-exif-spider: ERROR: Script execution failed (use -d to debug)
+|_http-favicon: Unknown favicon MD5: 1194D7D32448E1F90741A97B42AF91FA
+|_http-feed: Couldn't find any feeds.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+|_http-generator: Joomla! - Open Source Content Management
+| http-grep: 
+|   (1) http://10.10.43.175:80/: 
+|     (1) ip: 
+|_      + 10.10.43.175
+| http-headers: 
+|   Date: Wed, 13 Jan 2021 17:37:22 GMT
+|   Server: Apache/2.4.6 (CentOS) PHP/5.6.40
+|   X-Powered-By: PHP/5.6.40
+|   Set-Cookie: eaa83fe8b963ab08ce9ab7d4a798de05=6u6mvu5gdls6usmkml1p2qkij6; path=/; HttpOnly
+|   Expires: Wed, 17 Aug 2005 00:00:00 GMT
+|   Last-Modified: Wed, 13 Jan 2021 17:37:23 GMT
+|   Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Pragma: no-cache
+|   Connection: close
+|   Content-Type: text/html; charset=utf-8
+|   
+|_  (Request type: HEAD)
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-malware-host: Host appears to be clean
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-mobileversion-checker: No mobile version detected.
+| http-php-version: Logo query returned unknown hash 9fd204a1ba2b062a35cef4d3f39dcdcd
+| Credits query returned unknown hash 0861c647499ab5b8c15b8cab8f453095
+|_Version from header x-powered-by: PHP/5.6.40
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-robots.txt: 15 disallowed entries 
+| /joomla/administrator/ /administrator/ /bin/ /cache/ 
+| /cli/ /components/ /includes/ /installation/ /language/ 
+|_/layouts/ /libraries/ /logs/ /modules/ /plugins/ /tmp/
+| http-security-headers: 
+|   Cache_Control: 
+|     Header: Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Pragma: 
+|     Header: Pragma: no-cache
+|   Expires: 
+|_    Header: Expires: Wed, 17 Aug 2005 00:00:00 GMT
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.6.40
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1; php: 1
+|     /images/
+|       jpeg: 1; png: 1
+|     /index.php/
+|       Other: 1
+|     /index.php/2-uncategorised/
+|       Other: 1
+|     /index.php/component/users/
+|       Other: 1
+|     /media/jui/js/
+|       js: 4
+|     /media/system/js/
+|       js: 4
+|     /templates/protostar/
+|       ico: 1
+|     /templates/protostar/css/
+|       css: 1
+|     /templates/protostar/js/
+|       js: 1
+|   Longest directory structure:
+|     Depth: 3
+|     Dir: /templates/protostar/css/
+|   Total files found (by extension):
+|_    Other: 4; css: 1; ico: 1; jpeg: 1; js: 9; php: 1; png: 1
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: Home
+| http-trace: TRACE is enabled
+| Headers:
+| Date: Wed, 13 Jan 2021 17:37:00 GMT
+| Server: Apache/2.4.6 (CentOS) PHP/5.6.40
+| Connection: close
+| Transfer-Encoding: chunked
+|_Content-Type: message/http
+| http-traceroute: 
+|   last-modified
+|     Hop #1: Wed, 13 Jan 2021 17:37:17 GMT
+|     Hop #2: Wed, 13 Jan 2021 17:37:19 GMT
+|_    Hop #3: Wed, 13 Jan 2021 17:37:21 GMT
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|_    PHP/
+| http-vhosts: 
+|_128 names had status 200
+| http-vuln-cve2017-8917: 
+|   VULNERABLE:
+|   Joomla! 3.7.0 'com_fields' SQL Injection Vulnerability
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-8917
+|     Risk factor: High  CVSSv3: 9.8 (CRITICAL) (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
+|       An SQL injection vulnerability in Joomla! 3.7.x before 3.7.1 allows attackers
+|       to execute aribitrary SQL commands via unspecified vectors.
+|       
+|     Disclosure date: 2017-05-17
+|     Extra information:
+|       User: root@localhost
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8917
+|_      https://blog.sucuri.net/2017/05/sql-injection-vulnerability-joomla-3-7.html
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+
+Read data files from: /usr/local/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan 13 12:40:26 2021 -- 1 IP address (1 host up) scanned in 213.22 seconds

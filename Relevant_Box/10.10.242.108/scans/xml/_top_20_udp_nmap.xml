@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91SVN scan initiated Sun Jan 17 12:18:28 2021 as: nmap -vv -&#45;reason -Pn -sU -A -&#45;top-ports=20 -&#45;version-all -oN /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/_top_20_udp_nmap.txt -oX /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/xml/_top_20_udp_nmap.xml 10.10.242.108 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sU -A -&#45;top-ports=20 -&#45;version-all -oN /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/_top_20_udp_nmap.txt -oX /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/xml/_top_20_udp_nmap.xml 10.10.242.108" start="1610903908" startstr="Sun Jan 17 12:18:28 2021" version="7.91SVN" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="20" services="53,67-69,123,135,137-139,161-162,445,500,514,520,631,1434,1900,4500,49152"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1610903909"/>
+<taskend task="NSE" time="1610903909"/>
+<taskbegin task="NSE" time="1610903909"/>
+<taskend task="NSE" time="1610903909"/>
+<taskbegin task="NSE" time="1610903909"/>
+<taskend task="NSE" time="1610903909"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1610903909"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1610903909"/>
+<taskbegin task="UDP Scan" time="1610903909"/>
+<taskend task="UDP Scan" time="1610903914" extrainfo="20 total ports"/>
+<taskbegin task="Service scan" time="1610903914"/>
+<taskprogress task="Service scan" time="1610904157" percent="5.00" remaining="4618" etc="1610908774"/>
+<taskend task="Service scan" time="1610904157" extrainfo="20 services on 1 host"/>
+<taskbegin task="Traceroute" time="1610904161"/>
+<taskend task="Traceroute" time="1610904164"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1610904164"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1610904164"/>
+<taskbegin task="NSE" time="1610904164"/>
+<taskprogress task="NSE" time="1610904195" percent="98.63" remaining="1" etc="1610904195"/>
+<taskprogress task="NSE" time="1610904225" percent="98.71" remaining="1" etc="1610904226"/>
+<taskprogress task="NSE" time="1610904255" percent="98.86" remaining="2" etc="1610904256"/>
+<taskprogress task="NSE" time="1610904285" percent="99.08" remaining="2" etc="1610904286"/>
+<taskprogress task="NSE" time="1610904315" percent="99.19" remaining="2" etc="1610904316"/>
+<taskprogress task="NSE" time="1610904345" percent="99.26" remaining="2" etc="1610904346"/>
+<taskprogress task="NSE" time="1610904375" percent="99.41" remaining="2" etc="1610904376"/>
+<taskprogress task="NSE" time="1610904405" percent="99.67" remaining="1" etc="1610904406"/>
+<taskprogress task="NSE" time="1610904435" percent="99.82" remaining="1" etc="1610904436"/>
+<taskend task="NSE" time="1610904445"/>
+<taskbegin task="NSE" time="1610904445"/>
+<taskend task="NSE" time="1610904446"/>
+<taskbegin task="NSE" time="1610904446"/>
+<taskend task="NSE" time="1610904446"/>
+<host starttime="1610903909" endtime="1610904446"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.242.108" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="udp" portid="53"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="udp" portid="67"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="68"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="69"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="tftp" method="table" conf="3"/></port>
+<port protocol="udp" portid="123"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ntp" method="table" conf="3"/></port>
+<port protocol="udp" portid="135"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="137"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ns" method="table" conf="3"/></port>
+<port protocol="udp" portid="138"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-dgm" method="table" conf="3"/></port>
+<port protocol="udp" portid="139"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="udp" portid="161"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="snmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="162"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="snmptrap" method="table" conf="3"/></port>
+<port protocol="udp" portid="445"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="udp" portid="500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="isakmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="514"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="syslog" method="table" conf="3"/></port>
+<port protocol="udp" portid="520"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="route" method="table" conf="3"/></port>
+<port protocol="udp" portid="631"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="udp" portid="1434"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ms-sql-m" method="table" conf="3"/></port>
+<port protocol="udp" portid="1900"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="upnp" method="table" conf="3"/></port>
+<port protocol="udp" portid="4500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="nat-t-ike" method="table" conf="3"/></port>
+<port protocol="udp" portid="49152"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<os><osfingerprint fingerprint="SCAN(V=7.91SVN%E=4%D=1/17%OT=%CT=%CU=%PV=Y%DS=4%DC=T%G=N%TM=6004737E%P=x86_64-unknown-linux-gnu)&#xa;SEQ(II=I)&#xa;U1(R=N)&#xa;IE(R=Y%DFI=N%TG=80%CD=Z)&#xa;"/>
+</os>
+<distance value="4"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.6.0.1" rtt="25.33"/>
+<hop ttl="4" ipaddr="10.10.242.108" rtt="94.38"/>
+</trace>
+<times srtt="96136" rttvar="9694" to="134912"/>
+</host>
+<taskbegin task="NSE" time="1610904446"/>
+<taskend task="NSE" time="1610904446"/>
+<taskbegin task="NSE" time="1610904446"/>
+<taskend task="NSE" time="1610904446"/>
+<taskbegin task="NSE" time="1610904446"/>
+<taskend task="NSE" time="1610904446"/>
+<runstats><finished time="1610904446" timestr="Sun Jan 17 12:27:26 2021" summary="Nmap done at Sun Jan 17 12:27:26 2021; 1 IP address (1 host up) scanned in 537.92 seconds" elapsed="537.92" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

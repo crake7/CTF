@@ -1,0 +1,19 @@
+# Nmap 7.91SVN scan initiated Sat Jan  9 19:33:25 2021 as: nmap -A -sW -vv -Pn -oA windwows 10.10.104.64
+Nmap scan report for 10.10.104.64
+Host is up, received user-set.
+All 1000 scanned ports on 10.10.104.64 are filtered because of 1000 no-responses
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.91SVN%E=4%D=1/9%OT=%CT=%CU=%PV=Y%G=N%TM=5FFA4C32%P=x86_64-unknown-linux-gnu)
+U1(R=N)
+IE(R=N)
+
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   30.77 ms 10.6.0.1
+2   ... 30
+
+Read data files from: /usr/local/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan  9 19:37:06 2021 -- 1 IP address (1 host up) scanned in 221.19 seconds

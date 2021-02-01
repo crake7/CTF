@@ -1,0 +1,5 @@
+# Nmap 7.91SVN scan initiated Mon Jan 11 19:12:56 2021 as: nmap -p 68 -vv -oA full 10.10.231.52
+# Ports scanned: TCP(1;68) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.231.52 ()	Status: Up
+Host: 10.10.231.52 ()	Ports: 68/closed/tcp//dhcpc///
+# Nmap done at Mon Jan 11 19:12:57 2021 -- 1 IP address (1 host up) scanned in 0.86 seconds

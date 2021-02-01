@@ -1,0 +1,41 @@
+# Nmap 7.91SVN scan initiated Thu Jan 14 20:56:00 2021 as: nmap -vv --reason -Pn -sV -p 2222 --script=banner,ssh2-enum-algos,ssh-hostkey,ssh-auth-methods -oN /home/kali/tryhackme/Overpass2_box/results/scans/results/scans/tcp_2222_ssh_nmap.txt -oX /home/kali/tryhackme/Overpass2_box/results/scans/results/scans/xml/tcp_2222_ssh_nmap.xml 10.10.1.155
+Nmap scan report for 10.10.1.155
+Host is up, received user-set (0.10s latency).
+Scanned at 2021-01-14 20:56:01 EST for 33s
+
+PORT     STATE SERVICE REASON         VERSION
+2222/tcp open  ssh     syn-ack ttl 61 OpenSSH 8.2p1 Debian 4 (protocol 2.0)
+|_banner: SSH-2.0-OpenSSH_8.2p1 Debian-4
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|_    password
+| ssh-hostkey: 
+|   2048 a2:a6:d2:18:79:e3:b0:20:a2:4f:aa:b6:ac:2e:6b:f2 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDlwW5RS5iWPR+x1AVz4TAWAr/fSvF3KC16voiHSUImF8fNiWT4Pcb5KADkmhssq4amO2uyN+gF9KpEbXrVj63hKdkJrF4lQnzlxX8mHeeg9CLWA1/zI1BZ8TDmC9h45K3DwJjcD8zb56JPDi20PoIjVe3zUe3lf2geBxsAyhR5Cs4vWWUBzyocdkFDu+QXirPJv5lxcuiPhUVyDQZtHOK9evrXOOpeZiYgpqxcYTqHk5JcZbrV1sTNU8mkQiJXuVDQO+hOoOO7yES3reMv0pDXtc/Cfz5ZHJuAaGhU/fawIjUBlIeXY3wjUJe3UYgm1qE/idyq+9rU5TVApjxo+mjR
+| ssh2-enum-algos: 
+|   kex_algorithms: (5)
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group14-sha1
+|   server_host_key_algorithms: (1)
+|       ssh-rsa
+|   encryption_algorithms: (5)
+|       aes128-gcm@openssh.com
+|       chacha20-poly1305@openssh.com
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|   mac_algorithms: (4)
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-256
+|       hmac-sha1
+|       hmac-sha1-96
+|   compression_algorithms: (1)
+|_      none
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/local/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan 14 20:56:34 2021 -- 1 IP address (1 host up) scanned in 34.06 seconds

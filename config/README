@@ -1,0 +1,4 @@
+Use your OpenVPN file with the following command:
+
+sudo openvpn /path/to/file.ovpn
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91SVN scan initiated Wed Jan 13 12:36:53 2021 as: nmap -vv -&#45;reason -Pn -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/kali/tryhackme/Dailybugle_box/autorecon_scan/10.10.43.175/scans/tcp_80_http_nmap.txt -oX /home/kali/tryhackme/Dailybugle_box/autorecon_scan/10.10.43.175/scans/xml/tcp_80_http_nmap.xml 10.10.43.175 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/kali/tryhackme/Dailybugle_box/autorecon_scan/10.10.43.175/scans/tcp_80_http_nmap.txt -oX /home/kali/tryhackme/Dailybugle_box/autorecon_scan/10.10.43.175/scans/xml/tcp_80_http_nmap.xml 10.10.43.175" start="1610559413" startstr="Wed Jan 13 12:36:53 2021" version="7.91SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1610559414"/>
+<taskend task="NSE" time="1610559414"/>
+<taskbegin task="NSE" time="1610559414"/>
+<taskend task="NSE" time="1610559414"/>
+<taskbegin task="NSE" time="1610559414"/>
+<taskend task="NSE" time="1610559414"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1610559414"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1610559414"/>
+<taskbegin task="SYN Stealth Scan" time="1610559414"/>
+<taskend task="SYN Stealth Scan" time="1610559414" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1610559414"/>
+<taskend task="Service scan" time="1610559421" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1610559421"/>
+<taskprogress task="NSE" time="1610559452" percent="87.87" remaining="5" etc="1610559456"/>
+<taskprogress task="NSE" time="1610559482" percent="95.08" remaining="4" etc="1610559485"/>
+<taskprogress task="NSE" time="1610559512" percent="95.74" remaining="5" etc="1610559516"/>
+<taskprogress task="NSE" time="1610559542" percent="95.74" remaining="6" etc="1610559547"/>
+<taskprogress task="NSE" time="1610559572" percent="97.38" remaining="5" etc="1610559576"/>
+<taskprogress task="NSE" time="1610559602" percent="98.04" remaining="4" etc="1610559606"/>
+<taskend task="NSE" time="1610559622"/>
+<taskbegin task="NSE" time="1610559622"/>
+<taskend task="NSE" time="1610559626"/>
+<taskbegin task="NSE" time="1610559626"/>
+<taskend task="NSE" time="1610559626"/>
+<host starttime="1610559414" endtime="1610559626"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.43.175" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" product="Apache httpd" version="2.4.6" extrainfo="(CentOS) PHP/5.6.40" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.6</cpe></service><script id="http-auth-finder" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.43.175&#xa;  url                                                                      method&#xa;  http://10.10.43.175:80/                                                  FORM&#xa;  http://10.10.43.175:80/index.php/2-uncategorised                         FORM&#xa;  http://10.10.43.175:80/index.php/2-uncategorised/1-spider-man-robs-bank  FORM&#xa;  http://10.10.43.175:80/index.php                                         FORM&#xa;"/><script id="http-backup-finder" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.43.175&#xa;  http://10.10.43.175:80/index.php/2-uncategorised/index.bak&#xa;"/><script id="http-chrono" output="Request times for /; avg: 1187.84ms; min: 851.40ms; max: 1606.86ms"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.43.175&#xa;    &#xa;    Path: http://10.10.43.175:80/media/jui/js/jquery.min.js?787ff2be3d28e0eefd8e0930f878dbca&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*! jQuery v1.12.4 | (c) jQuery Foundation | jquery.org/license */&#xa;    &#xa;    Path: http://10.10.43.175:80/media/jui/js/bootstrap.min.js?787ff2be3d28e0eefd8e0930f878dbca&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*!&#xa;         * Bootstrap.js by @fat &amp; @mdo&#xa;         * Copyright 2012 Twitter, Inc.&#xa;         * http://www.apache.org/licenses/LICENSE-2.0.txt&#xa;         *&#xa;         * Custom version for Joomla!&#xa;         */&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;amp;template=protostar&amp;amp;link=a143f1f184b68faa80904068a818809edefb2174&#xa;    Line number: 48&#xa;    Comment: &#xa;        &lt;!-&#45; Banner -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php?format=feed&amp;amp;type=atom&#xa;    Line number: 2&#xa;    Comment: &#xa;        &lt;!-&#45; generator=&quot;Joomla! - Open Source Content Management&quot; -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;amp;template=protostar&amp;amp;link=a143f1f184b68faa80904068a818809edefb2174&#xa;    Line number: 82&#xa;    Comment: &#xa;        &lt;!-&#45; Footer -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/users/?view=remind&amp;amp;Itemid=101&#xa;    Line number: 173&#xa;    Comment: &#xa;        &lt;!-&#45; End Right Sidebar -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;amp;template=protostar&amp;amp;link=a143f1f184b68faa80904068a818809edefb2174&#xa;    Line number: 31&#xa;    Comment: &#xa;        &lt;!-&#45;[if lt IE 9]&gt;&lt;script src=&quot;/media/jui/js/html5.js&quot;&gt;&lt;/script&gt;&lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.43.175:80/media/jui/js/html5.js?787ff2be3d28e0eefd8e0930f878dbca&#xa;    Line number: 1&#xa;    Comment: &#xa;        /**&#xa;        * @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed&#xa;        */&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;amp;template=protostar&amp;amp;link=a143f1f184b68faa80904068a818809edefb2174&#xa;    Line number: 34&#xa;    Comment: &#xa;        &lt;!-&#45; Body -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.43.175:80/media/system/js/caption.js?787ff2be3d28e0eefd8e0930f878dbca&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*&#xa;                GNU General Public License version 2 or later; see LICENSE.txt&#xa;        */&#xa;    &#xa;    Path: http://10.10.43.175:80/templates/protostar/js/template.js?787ff2be3d28e0eefd8e0930f878dbca&#xa;    Line number: 1&#xa;    Comment: &#xa;        /**&#xa;         * @package     Joomla.Site&#xa;         * @subpackage  Templates.protostar&#xa;         * @copyright   Copyright (C) 2005 - 2017 Open Source Matters, Inc. All rights reserved.&#xa;         * @license     GNU General Public License version 2 or later; see LICENSE.txt&#xa;         * @since       3.2&#xa;         */&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;amp;template=protostar&amp;amp;link=a143f1f184b68faa80904068a818809edefb2174&#xa;    Line number: 77&#xa;    Comment: &#xa;        &lt;!-&#45; End Content -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/users/?view=remind&amp;amp;Itemid=101&#xa;    Line number: 48&#xa;    Comment: &#xa;        &lt;!-&#45;[if lt IE 9]&gt;&lt;script src=&quot;/media/jui/js/html5.js?787ff2be3d28e0eefd8e0930f878dbca&quot;&gt;&lt;/script&gt;&lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/users/?view=remind&amp;amp;Itemid=101&#xa;    Line number: 121&#xa;    Comment: &#xa;        &lt;!-&#45; Begin Right Sidebar -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;amp;template=protostar&amp;amp;link=a143f1f184b68faa80904068a818809edefb2174&#xa;    Line number: 37&#xa;    Comment: &#xa;        &lt;!-&#45; Header -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/mailto/?tmpl=component&amp;amp;template=protostar&amp;amp;link=a143f1f184b68faa80904068a818809edefb2174&#xa;    Line number: 53&#xa;    Comment: &#xa;        &lt;!-&#45; Begin Content -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/2-uncategorised&#xa;    Line number: 157&#xa;    Comment: &#xa;        &lt;!-&#45; end items-leading -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/users/?view=remind&amp;amp;Itemid=101&#xa;    Line number: 38&#xa;    Comment: &#xa;        &lt;!-&#45;[if lt IE 9]&gt;&lt;script src=&quot;/media/system/js/polyfill.event.js?787ff2be3d28e0eefd8e0930f878dbca&quot;&gt;&lt;/script&gt;&lt;![endif]-&#45;&gt;&#xa;"/><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.43.175&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: http://10.10.43.175:80/&#xa;    Form id: login-form&#xa;    Form action: /index.php&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/2-uncategorised&#xa;    Form id: login-form&#xa;    Form action: /index.php&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/2-uncategorised/1-spider-man-robs-bank&#xa;    Form id: login-form&#xa;    Form action: /index.php&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php&#xa;    Form id: login-form&#xa;    Form action: /index.php&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/users/?view=reset&amp;amp;Itemid=101&#xa;    Form id: user-registration&#xa;    Form action: /index.php/component/users/?task=reset.request&amp;Itemid=101&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/users/?view=reset&amp;amp;Itemid=101&#xa;    Form id: login-form&#xa;    Form action: /index.php/component/users/?Itemid=101&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/users/?view=remind&amp;amp;Itemid=101&#xa;    Form id: user-registration&#xa;    Form action: /index.php/component/users/?task=remind.remind&amp;Itemid=101&#xa;    &#xa;    Path: http://10.10.43.175:80/index.php/component/users/?view=remind&amp;amp;Itemid=101&#xa;    Form id: login-form&#xa;    Form action: /index.php/component/users/?Itemid=101&#xa;"/><script id="http-date" output="Wed, 13 Jan 2021 17:37:07 GMT; -3s from local time."><elem key="date">2021-01-13T17:37:07+00:00</elem>
+<elem key="delta">-3.0</elem>
+</script><script id="http-devframework" output="Joomla detected. Found common traces on /"/><script id="http-dombased-xss" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.43.175&#xa;  Found the following indications of potential DOM based XSS: &#xa;    &#xa;    Source: window.open(this.href,&apos;win2&apos;,&apos;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no&apos;)&#xa;    Pages: http://10.10.43.175:80/, http://10.10.43.175:80/index.php/2-uncategorised, http://10.10.43.175:80/index.php/2-uncategorised/1-spider-man-robs-bank, http://10.10.43.175:80/index.php&#xa;"/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-enum" output="&#xa;  /administrator/: Possible admin folder&#xa;  /administrator/index.php: Possible admin folder&#xa;  /robots.txt: Robots file&#xa;  /administrator/manifests/files/joomla.xml: Joomla version 3.7.0&#xa;  /language/en-GB/en-GB.xml: Joomla version 3.7.0&#xa;  /htaccess.txt: Joomla!&#xa;  /README.txt: Interesting, a readme.&#xa;  /bin/: Potentially interesting folder&#xa;  /cache/: Potentially interesting folder&#xa;  /icons/: Potentially interesting folder w/ directory listing&#xa;  /images/: Potentially interesting folder&#xa;  /includes/: Potentially interesting folder&#xa;  /libraries/: Potentially interesting folder&#xa;  /modules/: Potentially interesting folder&#xa;  /templates/: Potentially interesting folder&#xa;  /tmp/: Potentially interesting folder&#xa;"/><script id="http-errors" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-exif-spider" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-favicon" output="Unknown favicon MD5: 1194D7D32448E1F90741A97B42AF91FA"/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-generator" output="Joomla! - Open Source Content Management"/><script id="http-grep" output="&#xa;  (1) http://10.10.43.175:80/: &#xa;    (1) ip: &#xa;      + 10.10.43.175"><table key="(1) http://10.10.43.175:80/">
+<table key="(1) ip">
+<elem>+ 10.10.43.175</elem>
+</table>
+</table>
+</script><script id="http-headers" output="&#xa;  Date: Wed, 13 Jan 2021 17:37:22 GMT&#xa;  Server: Apache/2.4.6 (CentOS) PHP/5.6.40&#xa;  X-Powered-By: PHP/5.6.40&#xa;  Set-Cookie: eaa83fe8b963ab08ce9ab7d4a798de05=6u6mvu5gdls6usmkml1p2qkij6; path=/; HttpOnly&#xa;  Expires: Wed, 17 Aug 2005 00:00:00 GMT&#xa;  Last-Modified: Wed, 13 Jan 2021 17:37:23 GMT&#xa;  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0&#xa;  Pragma: no-cache&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=utf-8&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-php-version" output="Logo query returned unknown hash 9fd204a1ba2b062a35cef4d3f39dcdcd&#xa;Credits query returned unknown hash 0861c647499ab5b8c15b8cab8f453095&#xa;Version from header x-powered-by: PHP/5.6.40"/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-robots.txt" output="15 disallowed entries &#xa;/joomla/administrator/ /administrator/ /bin/ /cache/ &#xa;/cli/ /components/ /includes/ /installation/ /language/ &#xa;/layouts/ /libraries/ /logs/ /modules/ /plugins/ /tmp/"/><script id="http-security-headers" output="&#xa;  Cache_Control: &#xa;    Header: Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0&#xa;  Pragma: &#xa;    Header: Pragma: no-cache&#xa;  Expires: &#xa;    Header: Expires: Wed, 17 Aug 2005 00:00:00 GMT"><table key="Cache_Control">
+<elem>Header: Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</elem>
+</table>
+<table key="Pragma">
+<elem>Header: Pragma: no-cache</elem>
+</table>
+<table key="Expires">
+<elem>Header: Expires: Wed, 17 Aug 2005 00:00:00 GMT</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.6 (CentOS) PHP/5.6.40"><elem>Apache/2.4.6 (CentOS) PHP/5.6.40</elem>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1; php: 1&#xa;    /images/&#xa;      jpeg: 1; png: 1&#xa;    /index.php/&#xa;      Other: 1&#xa;    /index.php/2-uncategorised/&#xa;      Other: 1&#xa;    /index.php/component/users/&#xa;      Other: 1&#xa;    /media/jui/js/&#xa;      js: 4&#xa;    /media/system/js/&#xa;      js: 4&#xa;    /templates/protostar/&#xa;      ico: 1&#xa;    /templates/protostar/css/&#xa;      css: 1&#xa;    /templates/protostar/js/&#xa;      js: 1&#xa;  Longest directory structure:&#xa;    Depth: 3&#xa;    Dir: /templates/protostar/css/&#xa;  Total files found (by extension):&#xa;    Other: 4; css: 1; ico: 1; jpeg: 1; js: 9; php: 1; png: 1&#xa;"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="Home"><elem key="title">Home</elem>
+</script><script id="http-trace" output="TRACE is enabled&#xa;Headers:&#xa;Date: Wed, 13 Jan 2021 17:37:00 GMT&#xa;Server: Apache/2.4.6 (CentOS) PHP/5.6.40&#xa;Connection: close&#xa;Transfer-Encoding: chunked&#xa;Content-Type: message/http&#xa;"/><script id="http-traceroute" output="&#xa;  last-modified&#xa;    Hop #1: Wed, 13 Jan 2021 17:37:17 GMT&#xa;    Hop #2: Wed, 13 Jan 2021 17:37:19 GMT&#xa;    Hop #3: Wed, 13 Jan 2021 17:37:21 GMT&#xa;"/><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+</table>
+</script><script id="http-vhosts" output="&#xa;128 names had status 200"/><script id="http-vuln-cve2017-8917" output="&#xa;  VULNERABLE:&#xa;  Joomla! 3.7.0 &apos;com_fields&apos; SQL Injection Vulnerability&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2017-8917&#xa;    Risk factor: High  CVSSv3: 9.8 (CRITICAL) (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)&#xa;      An SQL injection vulnerability in Joomla! 3.7.x before 3.7.1 allows attackers&#xa;      to execute aribitrary SQL commands via unspecified vectors.&#xa;      &#xa;    Disclosure date: 2017-05-17&#xa;    Extra information:&#xa;      User: root@localhost&#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8917&#xa;      https://blog.sucuri.net/2017/05/sql-injection-vulnerability-joomla-3-7.html&#xa;"><table key="CVE-2017-8917">
+<elem key="title">Joomla! 3.7.0 &apos;com_fields&apos; SQL Injection Vulnerability</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2017-8917</elem>
+</table>
+<table key="scores">
+<elem key="CVSSv3">9.8 (CRITICAL) (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)</elem>
+</table>
+<table key="description">
+<elem>An SQL injection vulnerability in Joomla! 3.7.x before 3.7.1 allows attackers&#xa;to execute aribitrary SQL commands via unspecified vectors.&#xa;</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="year">2017</elem>
+<elem key="month">05</elem>
+<elem key="day">17</elem>
+</table>
+</table>
+<elem key="disclosure">2017-05-17</elem>
+<table key="check_results">
+</table>
+<table key="extra_info">
+<elem>User: root@localhost</elem>
+</table>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8917</elem>
+<elem>https://blog.sucuri.net/2017/05/sql-injection-vulnerability-joomla-3-7.html</elem>
+</table>
+</table>
+</script><script id="http-wordpress-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args search-limit=&lt;number|all&gt; for deeper analysis)"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/></port>
+</ports>
+<times srtt="97602" rttvar="97602" to="488010"/>
+</host>
+<taskbegin task="NSE" time="1610559626"/>
+<taskend task="NSE" time="1610559626"/>
+<taskbegin task="NSE" time="1610559626"/>
+<taskend task="NSE" time="1610559626"/>
+<taskbegin task="NSE" time="1610559626"/>
+<taskend task="NSE" time="1610559626"/>
+<runstats><finished time="1610559626" timestr="Wed Jan 13 12:40:26 2021" summary="Nmap done at Wed Jan 13 12:40:26 2021; 1 IP address (1 host up) scanned in 213.22 seconds" elapsed="213.22" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

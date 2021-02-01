@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91SVN scan initiated Wed Jan 13 12:36:53 2021 as: nmap -vv -&#45;reason -Pn -sV -p 3306 &quot;-&#45;script=banner,(mysql* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/kali/tryhackme/Dailybugle_box/autorecon_scan/10.10.43.175/scans/tcp_3306_mysql_nmap.txt -oX /home/kali/tryhackme/Dailybugle_box/autorecon_scan/10.10.43.175/scans/xml/tcp_3306_mysql_nmap.xml 10.10.43.175 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 3306 &quot;-&#45;script=banner,(mysql* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/kali/tryhackme/Dailybugle_box/autorecon_scan/10.10.43.175/scans/tcp_3306_mysql_nmap.txt -oX /home/kali/tryhackme/Dailybugle_box/autorecon_scan/10.10.43.175/scans/xml/tcp_3306_mysql_nmap.xml 10.10.43.175" start="1610559413" startstr="Wed Jan 13 12:36:53 2021" version="7.91SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="3306"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1610559414"/>
+<taskend task="NSE" time="1610559414"/>
+<taskbegin task="NSE" time="1610559414"/>
+<taskend task="NSE" time="1610559414"/>
+<taskbegin task="NSE" time="1610559414"/>
+<taskend task="NSE" time="1610559414"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1610559414"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1610559414"/>
+<taskbegin task="SYN Stealth Scan" time="1610559414"/>
+<taskend task="SYN Stealth Scan" time="1610559414" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1610559414"/>
+<taskend task="Service scan" time="1610559415" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1610559415"/>
+<taskend task="NSE" time="1610559415"/>
+<taskbegin task="NSE" time="1610559415"/>
+<taskend task="NSE" time="1610559418"/>
+<taskbegin task="NSE" time="1610559418"/>
+<taskend task="NSE" time="1610559418"/>
+<host starttime="1610559414" endtime="1610559418"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.43.175" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="mysql" product="MariaDB" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mariadb:mariadb</cpe></service><script id="banner" output="d\x00\x00\x00\xFFj\x04Host &apos;ip-10-6-47-110.eu-west-1.compute.in&#xa;ternal&apos; is not allowed to connect to this MariaDB server"/><script id="mysql-empty-password" output="Host &apos;ip-10-6-47-110.eu-west-1.compute.internal&apos; is not allowed to connect to this MariaDB server"/><script id="mysql-vuln-cve2012-2122" output="ERROR: Script execution failed (use -d to debug)"/><script id="sslv2-drown"></script></port>
+</ports>
+<times srtt="95762" rttvar="95762" to="478810"/>
+</host>
+<taskbegin task="NSE" time="1610559418"/>
+<taskend task="NSE" time="1610559418"/>
+<taskbegin task="NSE" time="1610559418"/>
+<taskend task="NSE" time="1610559418"/>
+<taskbegin task="NSE" time="1610559418"/>
+<taskend task="NSE" time="1610559418"/>
+<runstats><finished time="1610559418" timestr="Wed Jan 13 12:36:58 2021" summary="Nmap done at Wed Jan 13 12:36:58 2021; 1 IP address (1 host up) scanned in 5.61 seconds" elapsed="5.61" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

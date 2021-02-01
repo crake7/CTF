@@ -1,0 +1,100 @@
+
+-e \e[00;33m### ENVIRONMENTAL #######################################\e[00m
+-e \e[00;31m[-] Environment information:\e[00m
+SHLVL=1
+OLDPWD=/var/backups
+APACHE_RUN_DIR=/var/run/apache2
+APACHE_PID_FILE=/var/run/apache2/apache2.pid
+_=/bin/sh
+TERM=xterm
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+APACHE_LOCK_DIR=/var/lock/apache2
+LANG=C
+SHELL=bash
+APACHE_RUN_USER=www-data
+APACHE_RUN_GROUP=www-data
+APACHE_LOG_DIR=/var/log/apache2
+PWD=/tmp
+-e 
+
+-e \e[00;33m### JOBS/TASKS ##########################################\e[00m
+-e \e[00;31m[-] Cron jobs:\e[00m
+-rw-r--r-- 1 root root  776 Sep 17  2019 /etc/crontab
+
+/etc/cron.d:
+total 24
+drwxr-xr-x   2 root root 4096 Sep 17  2019 .
+drwxr-xr-x 102 root root 4096 Nov 26 10:20 ..
+-rw-r--r--   1 root root  102 Apr  5  2016 .placeholder
+-rw-r--r--   1 root root  589 Jul 16  2014 mdadm
+-rw-r--r--   1 root root  712 Dec 17  2018 php
+-rw-r--r--   1 root root  191 Sep 17  2019 popularity-contest
+
+/etc/cron.daily:
+total 68
+drwxr-xr-x   2 root root 4096 Sep 17  2019 .
+drwxr-xr-x 102 root root 4096 Nov 26 10:20 ..
+-rw-r--r--   1 root root  102 Apr  5  2016 .placeholder
+-rwxr-xr-x   1 root root  539 Jun 11  2018 apache2
+-rwxr-xr-x   1 root root  376 Mar 31  2016 apport
+-rwxr-xr-x   1 root root 1474 Oct  9  2018 apt-compat
+-rwxr-xr-x   1 root root  355 May 22  2012 bsdmainutils
+-rwxr-xr-x   1 root root 1597 Nov 26  2015 dpkg
+-rwxr-xr-x   1 root root  372 May  5  2015 logrotate
+-rwxr-xr-x   1 root root 1293 Nov  6  2015 man-db
+-rwxr-xr-x   1 root root  539 Jul 16  2014 mdadm
+-rwxr-xr-x   1 root root  435 Nov 18  2014 mlocate
+-rwxr-xr-x   1 root root  249 Nov 12  2015 passwd
+-rwxr-xr-x   1 root root 3449 Feb 26  2016 popularity-contest
+-rwxr-xr-x   1 root root  383 Sep 24  2018 samba
+-rwxr-xr-x   1 root root  330 Apr  7  2018 squirrelmail
+-rwxr-xr-x   1 root root  214 Dec  7  2018 update-notifier-common
+
+/etc/cron.hourly:
+total 12
+drwxr-xr-x   2 root root 4096 Sep 17  2019 .
+drwxr-xr-x 102 root root 4096 Nov 26 10:20 ..
+-rw-r--r--   1 root root  102 Apr  5  2016 .placeholder
+
+/etc/cron.monthly:
+total 12
+drwxr-xr-x   2 root root 4096 Sep 17  2019 .
+drwxr-xr-x 102 root root 4096 Nov 26 10:20 ..
+-rw-r--r--   1 root root  102 Apr  5  2016 .placeholder
+
+/etc/cron.weekly:
+total 24
+drwxr-xr-x   2 root root 4096 Sep 17  2019 .
+drwxr-xr-x 102 root root 4096 Nov 26 10:20 ..
+-rw-r--r--   1 root root  102 Apr  5  2016 .placeholder
+-rwxr-xr-x   1 root root   86 Apr 13  2016 fstrim
+-rwxr-xr-x   1 root root  771 Nov  6  2015 man-db
+-rwxr-xr-x   1 root root  211 Dec  7  2018 update-notifier-common
+-e 
+
+
+e \e[00;31m[-] Crontab contents:\e[00m
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you dont have to run the `crontab
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user  command
+*/1 *   * * *   root    /home/milesdyson/backups/backup.sh
+17 *    * * *   root    cd / && run-parts --report /etc/cron.hourly
+25 6    * * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6    * * 7   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6    1 * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+

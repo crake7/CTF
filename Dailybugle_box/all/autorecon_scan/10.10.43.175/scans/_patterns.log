@@ -1,0 +1,12 @@
+nmap-quick - Matched Pattern: unauthorized
+
+tcp/3306/nmap-mysql - Matched Pattern: unauthorized
+
+tcp/80/nmap-http - Identified HTTP Server: Apache/2.4.6 (CentOS) PHP/5.6.40
+
+tcp/80/nmap-http - Identified HTTP Server: Apache/2.4.6 (CentOS) PHP/5.6.40
+
+tcp/80/nmap-http - Nmap script found a potential vulnerability. (State: VULNERABLE)
+
+nmap-full-tcp - Matched Pattern: unauthorized
+

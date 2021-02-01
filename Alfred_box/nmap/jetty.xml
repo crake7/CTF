@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91SVN scan initiated Sun Jan 10 13:36:44 2021 as: nmap -p 8080 -vv -Pn -&#45;script=discovery -oA jetty 10.10.239.81 -->
+<nmaprun scanner="nmap" args="nmap -p 8080 -vv -Pn -&#45;script=discovery -oA jetty 10.10.239.81" start="1610303804" startstr="Sun Jan 10 13:36:44 2021" version="7.91SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="8080"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1610303805"/>
+<taskend task="NSE" time="1610303815"/>
+<taskbegin task="NSE" time="1610303815"/>
+<taskend task="NSE" time="1610303815"/>
+<prescript><script id="hostmap-robtex" output="*TEMPORARILY DISABLED* due to changes in Robtex&apos;s API. See https://www.robtex.com/api/"/><script id="http-robtex-shared-ns" output="*TEMPORARILY DISABLED* due to changes in Robtex&apos;s API. See https://www.robtex.com/api/"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/></prescript><taskbegin task="Parallel DNS resolution of 1 host." time="1610303816"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1610303816"/>
+<taskbegin task="SYN Stealth Scan" time="1610303816"/>
+<taskend task="SYN Stealth Scan" time="1610303816" extrainfo="1 total ports"/>
+<taskbegin task="NSE" time="1610303816"/>
+<taskprogress task="NSE" time="1610303847" percent="99.76" remaining="1" etc="1610303847"/>
+<taskprogress task="NSE" time="1610303877" percent="99.76" remaining="1" etc="1610303877"/>
+<taskprogress task="NSE" time="1610303907" percent="99.76" remaining="1" etc="1610303907"/>
+<taskprogress task="NSE" time="1610303937" percent="99.76" remaining="1" etc="1610303937"/>
+<taskprogress task="NSE" time="1610303967" percent="99.76" remaining="1" etc="1610303967"/>
+<taskprogress task="NSE" time="1610303997" percent="99.76" remaining="1" etc="1610303997"/>
+<taskprogress task="NSE" time="1610304027" percent="99.76" remaining="1" etc="1610304028"/>
+<taskend task="NSE" time="1610304055"/>
+<taskbegin task="NSE" time="1610304055"/>
+<taskend task="NSE" time="1610304055"/>
+<host starttime="1610303816" endtime="1610304055"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.239.81" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="http-proxy" method="table" conf="3"/><script id="http-chrono" output="Request times for /; avg: 246.31ms; min: 218.67ms; max: 266.96ms"/><script id="http-date" output="Sun, 10 Jan 2021 18:36:56 GMT; -1s from local time."><elem key="date">2021-01-10T18:36:56+00:00</elem>
+<elem key="delta">-1.0</elem>
+</script><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-enum" output="&#xa;  /robots.txt: Robots file&#xa;"/><script id="http-favicon" output="Unknown favicon MD5: 23E8C7BD78E8CD826C5A6073B15068B1"/><script id="http-headers" output="&#xa;  Connection: close&#xa;  Date: Sun, 10 Jan 2021 18:37:00 GMT&#xa;  X-Content-Type-Options: nosniff&#xa;  Set-Cookie: JSESSIONID.ad06aa11=node0790k2hwszqp41f0ewkh4ijt7x2585.node0;Path=/;HttpOnly&#xa;  Expires: Thu, 01 Jan 1970 00:00:00 GMT&#xa;  Content-Type: text/html;charset=utf-8&#xa;  X-Hudson: 1.395&#xa;  X-Jenkins: 2.190.1&#xa;  X-Jenkins-Session: b911ff2e&#xa;  X-You-Are-Authenticated-As: anonymous&#xa;  X-You-Are-In-Group-Disabled: JENKINS-39402: use -Dhudson.security.AccessDeniedException2.REPORT_GROUP_HEADERS=true or use /whoAmI to diagnose&#xa;  X-Required-Permission: hudson.model.Hudson.Read&#xa;  X-Permission-Implied-By: hudson.security.Permission.GenericRead&#xa;  X-Permission-Implied-By: hudson.model.Hudson.Administer&#xa;  Content-Length: 799&#xa;  Server: Jetty(9.4.z-SNAPSHOT)&#xa;  &#xa;  (Request type: GET)&#xa;"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-title" output="Site doesn&apos;t have a title (text/html;charset=utf-8)."></script><script id="http-vhosts" output="&#xa;128 names had status 403"/><script id="http-wordpress-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args search-limit=&lt;number|all&gt; for deeper analysis)"/></port>
+</ports>
+<hostscript><script id="dns-brute" output="Can&apos;t guess domain of &quot;10.10.239.81&quot;; use dns-brute.domain script argument."/><script id="fcrdns" output="FAIL (No PTR record)"><table key="&lt;none&gt;">
+<elem key="status">fail</elem>
+<elem key="reason">No PTR record</elem>
+</table>
+</script><script id="ipidseq" output="ERROR: Script execution failed (use -d to debug)"/><script id="path-mtu" output="PMTU == 1500"/></hostscript><times srtt="94898" rttvar="94898" to="474490"/>
+</host>
+<taskbegin task="NSE" time="1610304055"/>
+<taskend task="NSE" time="1610304055"/>
+<taskbegin task="NSE" time="1610304055"/>
+<taskend task="NSE" time="1610304055"/>
+<runstats><finished time="1610304055" timestr="Sun Jan 10 13:40:55 2021" summary="Nmap done at Sun Jan 10 13:40:55 2021; 1 IP address (1 host up) scanned in 250.82 seconds" elapsed="250.82" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

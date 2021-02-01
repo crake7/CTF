@@ -1,0 +1,85 @@
+# Nmap 7.91SVN scan initiated Sun Jan 17 12:18:28 2021 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/_quick_tcp_nmap.txt -oX /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/xml/_quick_tcp_nmap.xml 10.10.242.108
+Nmap scan report for 10.10.242.108
+Host is up, received user-set (0.10s latency).
+Scanned at 2021-01-17 12:18:29 EST for 55s
+Not shown: 995 filtered ports
+Reason: 995 no-responses
+PORT     STATE SERVICE       REASON          VERSION
+80/tcp   open  http          syn-ack ttl 125 Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+135/tcp  open  msrpc         syn-ack ttl 125 Microsoft Windows RPC
+139/tcp  open  netbios-ssn   syn-ack ttl 125 Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds  syn-ack ttl 125 Windows Server 2016 Standard Evaluation 14393 microsoft-ds
+3389/tcp open  ms-wbt-server syn-ack ttl 125 Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: RELEVANT
+|   NetBIOS_Domain_Name: RELEVANT
+|   NetBIOS_Computer_Name: RELEVANT
+|   DNS_Domain_Name: Relevant
+|   DNS_Computer_Name: Relevant
+|   Product_Version: 10.0.14393
+|_  System_Time: 2021-01-17T17:18:45+00:00
+| ssl-cert: Subject: commonName=Relevant
+| Issuer: commonName=Relevant
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-01-16T16:49:06
+| Not valid after:  2021-07-18T16:49:06
+| MD5:   b396 2ebd 6e31 0090 e06c 3d82 7da5 eb33
+| SHA-1: 84a5 c3a9 1434 0796 7d2b 91c2 3405 150f f5c8 ef68
+| -----BEGIN CERTIFICATE-----
+| MIIC1DCCAbygAwIBAgIQe0xT7WERjrhIAkqPxNNwlDANBgkqhkiG9w0BAQsFADAT
+| MREwDwYDVQQDEwhSZWxldmFudDAeFw0yMTAxMTYxNjQ5MDZaFw0yMTA3MTgxNjQ5
+| MDZaMBMxETAPBgNVBAMTCFJlbGV2YW50MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+| MIIBCgKCAQEA9ybRGPP32kqMZvx9A0MhW9Db4E4GwcMwCYVk8x1KNAnQz8c+R0YU
+| PbsBtOKkz3/vZtDluzWtHrbfVwIz88SB4+En5dUPdb7pZHCUmN+5L+eG/gV92krA
+| ZRWe2PW/bxqkkmviG0kx8qygwsbS0rcEbYUWK1Hbu6IHg0otrPtK4X72C+9gD+rT
+| XEHve84YDwDNdMFJGjtCBcCEb+hlKldVJt2vGCAxYtWR3CiifvT5KYuim6lvo7zA
+| lMthuacNs2akHQtILPRtIOtlWk6JfCsFOETEQNnCg+5L0khurh07K7l1twRpJZYE
+| wz8xkTWvqHLKMbC21QU2+vd0JEIcrpKf3QIDAQABoyQwIjATBgNVHSUEDDAKBggr
+| BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAI/PxjrXYjZN
+| Kpy9IV5nExWz4ZXwW5wW742USZlJTPEmYEdQCVsR42HMMSfbPCJ6Z9jnXra+A2k2
+| T84ESRLtXFN5UdCsMywCFc3uep5WpalzD7n4ba9E+YTx2qEQZhesCUU+qm71wh9Y
+| pSlSy8mOyrsev2SqvHocZNc1oVbk62FtfAhs//LtjhvYAjmXCBmpildE+5aUrJmD
+| TqsDGsDIvG4UvkTOCbEnaR+LNA0aSLE/uLwQ0u+q+pJNTEdBIOyN59xBSDHIkf1r
+| lHv3wxLKPeC8nBRviducwiiT4rzm8MaQNwvGMPBHFIImhrZ0hZyJjcQd+nDsYaQ4
+| rtLPSfXHu90=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-01-17T17:19:25+00:00; +1s from scanner time.
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1h36m01s, deviation: 3h34m41s, median: 0s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 26396/tcp): CLEAN (Timeout)
+|   Check 2 (port 23799/tcp): CLEAN (Timeout)
+|   Check 3 (port 53858/udp): CLEAN (Timeout)
+|   Check 4 (port 61078/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard Evaluation 14393 (Windows Server 2016 Standard Evaluation 6.3)
+|   Computer name: Relevant
+|   NetBIOS computer name: RELEVANT\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2021-01-17T09:18:49-08:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-01-17T17:18:48
+|_  start_date: 2021-01-17T16:49:06
+
+Read data files from: /usr/local/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 17 12:19:24 2021 -- 1 IP address (1 host up) scanned in 56.35 seconds

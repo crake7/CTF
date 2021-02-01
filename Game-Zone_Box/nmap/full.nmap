@@ -1,0 +1,10 @@
+# Nmap 7.91SVN scan initiated Mon Jan 11 19:12:56 2021 as: nmap -p 68 -vv -oA full 10.10.231.52
+Nmap scan report for 10.10.231.52
+Host is up, received reset ttl 61 (0.096s latency).
+Scanned at 2021-01-11 19:12:56 EST for 0s
+
+PORT   STATE  SERVICE REASON
+68/tcp closed dhcpc   reset ttl 61
+
+Read data files from: /usr/local/bin/../share/nmap
+# Nmap done at Mon Jan 11 19:12:57 2021 -- 1 IP address (1 host up) scanned in 0.86 seconds

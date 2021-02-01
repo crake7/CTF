@@ -1,0 +1,83 @@
+# Nmap 7.91SVN scan initiated Sat Jan  9 19:28:25 2021 as: nmap -A -vv -Pn -oA initial 10.10.104.64
+Nmap scan report for 10.10.104.64
+Host is up, received user-set (0.100s latency).
+Scanned at 2021-01-09 19:28:26 EST for 105s
+Not shown: 997 filtered ports
+Reason: 997 no-responses
+PORT     STATE SERVICE        REASON          VERSION
+80/tcp   open  http           syn-ack ttl 125 Microsoft IIS httpd 7.5
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: Site doesn't have a title (text/html).
+3389/tcp open  ms-wbt-server? syn-ack ttl 125
+| ssl-cert: Subject: commonName=alfred
+| Issuer: commonName=alfred
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2020-10-02T14:42:05
+| Not valid after:  2021-04-03T14:42:05
+| MD5:   fdb2 cd17 fad1 160d 06bc c1d8 31f3 7636
+| SHA-1: 6577 409f 2b1a 3e36 7ca7 4449 57f2 98c1 8750 3a3e
+| -----BEGIN CERTIFICATE-----
+| MIIC0DCCAbigAwIBAgIQH2x5JEL9daJC/GWsL/65MDANBgkqhkiG9w0BAQUFADAR
+| MQ8wDQYDVQQDEwZhbGZyZWQwHhcNMjAxMDAyMTQ0MjA1WhcNMjEwNDAzMTQ0MjA1
+| WjARMQ8wDQYDVQQDEwZhbGZyZWQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+| AoIBAQDwqCu1r5JwNiuelrl1s018MjkydEPIHmhpy2pWh0/wB8aqhHt8bcI48XVd
+| 4RBDuij/sy9W9S0LQ6ZtKMzaRlq5mDUx/wPX3p3BRAk6keiqPOOkaOv9DSOQUWzS
+| ON4Oz9ICj0zO9QjLZHa4IlcGdlhblzxG+jGX/SZ8gjVOzlQVqU1W+OKt7N6YFEkD
+| lJsvnc/cP7V82KbuZiskeLdLtHdKtdVYrR6AdO0ZTmnotnRprUoP/nvaKVWrP29F
+| a3I15E/W2uJdWer3gdYK/s4NOlasszIcBgMod0PjAdd0+zbBHy4ExhXn3vSHo3yo
+| 1EYZInzAdmD1oOpg3jZqhBisT3i1AgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUF
+| BwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQUFAAOCAQEA2jHXDxwJLNEy2YiY
+| R+W5D6kG/AJ/GRYmXbTHK/Ht5+sgAd0t5CICOJ8+ixm5xsneB2+goR8Z5Ds4z58D
+| X3sZswHzynx1eqeFxSIdjLpVMHdoFouZ0qvxSExTFXBV80E/csqQobKSHwYBHzl1
+| zs774gm32wvSsWOvKiX8A1WVtWgdhrzGgXOl8WSbVvexVJZgH0S6fP4+2W0Kg+cJ
+| JKjm8RRdRX1ir61VSS+bHDFW9V/9DlkJzmqTMet0TkMmENTX0wiKrEWbcFybeeQR
+| wVf5ECzwP40SAkraA6Ekmk+uU6NTmFqksElMUsbN4wVfRy7f1jPEpC5SCD/Bcsyg
+| alg8EA==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-01-10T00:30:11+00:00; 0s from scanner time.
+8080/tcp open  http           syn-ack ttl 125 Jetty 9.4.z-SNAPSHOT
+|_http-favicon: Unknown favicon MD5: 23E8C7BD78E8CD826C5A6073B15068B1
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Jetty(9.4.z-SNAPSHOT)
+|_http-title: Site doesn't have a title (text/html;charset=utf-8).
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows Server 2012 R2 (90%), Microsoft Windows Server 2008 R2 SP1 (90%), Microsoft Windows Server 2008 (90%), Microsoft Windows Server 2008 R2 (90%), Microsoft Windows Server 2008 R2 or Windows 8 (90%), Microsoft Windows 7 SP1 (90%), Microsoft Windows 8.1 Update 1 (90%), Microsoft Windows Phone 7.5 or 8.0 (90%), Microsoft Windows 7 or Windows Server 2008 R2 (89%), Microsoft Windows Server 2008 or 2008 Beta 3 (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91SVN%E=4%D=1/9%OT=80%CT=%CU=%PV=Y%DS=4%DC=T%G=N%TM=5FFA4A93%P=x86_64-unknown-linux-gnu)
+SEQ(SP=105%GCD=1%ISR=108%TI=I%TS=7)
+OPS(O1=M506NW8ST11%O2=M506NW8ST11%O3=M506NW8NNT11%O4=M506NW8ST11%O5=M506NW8ST11%O6=M506ST11)
+WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)
+ECN(R=Y%DF=Y%TG=80%W=2000%O=M506NW8NNS%CC=N%Q=)
+T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=N)
+
+Uptime guess: 0.016 days (since Sat Jan  9 19:06:29 2021)
+Network Distance: 4 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 0s
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   29.06 ms 10.6.0.1
+2   ... 3
+4   96.68 ms 10.10.104.64
+
+Read data files from: /usr/local/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan  9 19:30:11 2021 -- 1 IP address (1 host up) scanned in 105.82 seconds

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91SVN scan initiated Mon Jan 11 19:12:56 2021 as: nmap -p 68 -vv -oA full 10.10.231.52 -->
+<nmaprun scanner="nmap" args="nmap -p 68 -vv -oA full 10.10.231.52" start="1610410376" startstr="Mon Jan 11 19:12:56 2021" version="7.91SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="68"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1610410376"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.231.52" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1610410376" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1610410376"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1610410376"/>
+<taskbegin task="SYN Stealth Scan" time="1610410376"/>
+<taskend task="SYN Stealth Scan" time="1610410376" extrainfo="1 total ports"/>
+<host starttime="1610410376" endtime="1610410376"><status state="up" reason="reset" reason_ttl="61"/>
+<address addr="10.10.231.52" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="68"><state state="closed" reason="reset" reason_ttl="61"/><service name="dhcpc" method="table" conf="3"/></port>
+</ports>
+<times srtt="96183" rttvar="72627" to="386691"/>
+</host>
+<runstats><finished time="1610410377" timestr="Mon Jan 11 19:12:57 2021" summary="Nmap done at Mon Jan 11 19:12:57 2021; 1 IP address (1 host up) scanned in 0.86 seconds" elapsed="0.86" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for line in $(locate /usr/share/nmap/scripts/ | grep 'smb' | awk -F/ '{print $NF}');do
+	nmap -vv \-p 445 \--script=$line 10.10.29.154 
+done

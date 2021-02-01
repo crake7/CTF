@@ -1,0 +1,67 @@
+# Nmap 7.91SVN scan initiated Tue Jan 19 22:10:27 2021 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /home/kali/tryhackme/Internal/autorecon/scans/_full_tcp_nmap.txt -oX /home/kali/tryhackme/Internal/autorecon/scans/xml/_full_tcp_nmap.xml internal.thm
+adjust_timeouts2: packet supposedly had rtt of -386138 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -386138 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -272381 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -272381 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -139950 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -139950 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -230419 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -230419 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -249410 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -249410 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -702406 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -702406 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -749059 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -749059 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -70825 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -70825 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -279446 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -279446 microseconds.  Ignoring time.
+Nmap scan report for internal.thm (10.10.183.68)
+Host is up, received user-set (0.11s latency).
+Scanned at 2021-01-19 22:10:27 EST for 484s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 61 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 6e:fa:ef:be:f6:5f:98:b9:59:7b:f7:8e:b9:c5:62:1e (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzpZTvmUlaHPpKH8X2SHMndoS+GsVlbhABHJt4TN/nKUSYeFEHbNzutQnj+DrUEwNMauqaWCY7vNeYguQUXLx4LM5ukMEC8IuJo0rcuKNmlyYrgBlFws3q2956v8urY7/McCFf5IsItQxurCDyfyU/erO7fO02n2iT5k7Bw2UWf8FPvM9/jahisbkA9/FQKou3mbaSANb5nSrPc7p9FbqKs1vGpFopdUTI2dl4OQ3TkQWNXpvaFl0j1ilRynu5zLr6FetD5WWZXAuCNHNmcRo/aPdoX9JXaPKGCcVywqMM/Qy+gSiiIKvmavX6rYlnRFWEp25EifIPuHQ0s8hSXqx5
+|   256 ed:64:ed:33:e5:c9:30:58:ba:23:04:0d:14:eb:30:e9 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMFOI/P6nqicmk78vSNs4l+vk2+BQ0mBxB1KlJJPCYueaUExTH4Cxkqkpo/zJfZ77MHHDL5nnzTW+TO6e4mDMEw=
+|   256 b0:7f:7f:7b:52:62:62:2a:60:d4:3d:36:fa:89:ee:ff (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMlxubXGh//FE3OqdyitiEwfA2nNdCtdgLfDQxFHPyY0
+80/tcp open  http    syn-ack ttl 61 Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: HEAD GET POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+Aggressive OS guesses: Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Linux 2.6.32 (92%), Linux 2.6.39 - 3.2 (92%), Linux 3.1 - 3.2 (92%), Linux 3.11 (92%), Linux 3.2 - 4.9 (92%)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91SVN%E=4%D=1/19%OT=22%CT=1%CU=39682%PV=Y%DS=4%DC=T%G=Y%TM=6007
+OS:A107%P=x86_64-unknown-linux-gnu)SEQ(SP=103%GCD=1%ISR=10B%TI=Z%CI=Z%TS=A)
+OS:SEQ(SP=102%GCD=1%ISR=10C%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M506ST11NW7%O2=M506S
+OS:T11NW7%O3=M506NNT11NW7%O4=M506ST11NW7%O5=M506ST11NW7%O6=M506ST11)WIN(W1=
+OS:F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=
+OS:M506NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)
+OS:T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S
+OS:+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=
+OS:Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G
+OS:%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 42.684 days (since Tue Dec  8 05:53:34 2020)
+Network Distance: 4 hops
+TCP Sequence Prediction: Difficulty=259 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 554/tcp)
+HOP RTT       ADDRESS
+1   30.78 ms  10.6.0.1
+2   ... 3
+4   117.97 ms internal.thm (10.10.183.68)
+
+Read data files from: /usr/local/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jan 19 22:18:31 2021 -- 1 IP address (1 host up) scanned in 484.59 seconds

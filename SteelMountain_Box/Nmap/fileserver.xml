@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91SVN scan initiated Sat Jan  9 10:08:00 2021 as: nmap -p 8080 -&#45;script=http-enum.nse -PN -oA fileserver 10.10.0.156 -->
+<nmaprun scanner="nmap" args="nmap -p 8080 -&#45;script=http-enum.nse -PN -oA fileserver 10.10.0.156" start="1610204880" startstr="Sat Jan  9 10:08:00 2021" version="7.91SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="8080"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="NSE" time="1610204892" percent="0.00"/>
+<taskprogress task="NSE" time="1610204910" percent="0.00"/>
+<taskprogress task="NSE" time="1610204910" percent="0.00"/>
+<taskprogress task="NSE" time="1610204912" percent="0.00"/>

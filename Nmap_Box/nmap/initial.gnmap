@@ -1,0 +1,2 @@
+# Nmap 7.91SVN scan initiated Sat Dec 26 20:54:39 2020 as: nmap -A -p- -Pn -oA initial -vv 10.10.8.180
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)

@@ -1,0 +1,520 @@
+Starting Nmap 7.91SVN ( https://nmap.org ) at 2021-01-08 17:36 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:36
+Completed NSE at 17:36, 0.00s elapsed
+Initiating Ping Scan at 17:36
+Scanning 10.10.29.154 [4 ports]
+Completed Ping Scan at 17:36, 0.15s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:36
+Completed Parallel DNS resolution of 1 host. at 17:36, 0.00s elapsed
+Initiating SYN Stealth Scan at 17:36
+Scanning 10.10.29.154 [1 port]
+Discovered open port 445/tcp on 10.10.29.154
+Completed SYN Stealth Scan at 17:36, 0.28s elapsed (1 total ports)
+NSE: Script scanning 10.10.29.154.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:36
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+Completed NSE at 17:37, 81.28s elapsed
+Nmap scan report for 10.10.29.154
+Host is up, received reset ttl 61 (0.11s latency).
+Scanned at 2021-01-08 17:36:31 EST for 81s
+
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack ttl 61
+
+Host script results:
+| smb-brute: 
+|_  No accounts found
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:37
+Completed NSE at 17:37, 0.00s elapsed
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 82.09 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (84B)
+Starting Nmap 7.91SVN ( https://nmap.org ) at 2021-01-08 17:37 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:37
+Completed NSE at 17:37, 0.00s elapsed
+Initiating Ping Scan at 17:37
+Scanning 10.10.29.154 [4 ports]
+Completed Ping Scan at 17:37, 0.15s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:37
+Completed Parallel DNS resolution of 1 host. at 17:37, 0.02s elapsed
+Initiating SYN Stealth Scan at 17:37
+Scanning 10.10.29.154 [1 port]
+Discovered open port 445/tcp on 10.10.29.154
+Completed SYN Stealth Scan at 17:37, 0.14s elapsed (1 total ports)
+NSE: Script scanning 10.10.29.154.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:37
+Completed NSE at 17:37, 0.83s elapsed
+Nmap scan report for 10.10.29.154
+Host is up, received echo-reply ttl 61 (0.11s latency).
+Scanned at 2021-01-08 17:37:53 EST for 1s
+
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack ttl 61
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:37
+Completed NSE at 17:37, 0.00s elapsed
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.45 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (72B)
+Starting Nmap 7.91SVN ( https://nmap.org ) at 2021-01-08 17:37 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:37
+Completed NSE at 17:37, 0.00s elapsed
+Initiating Ping Scan at 17:37
+Scanning 10.10.29.154 [4 ports]
+Completed Ping Scan at 17:37, 0.27s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:37
+Completed Parallel DNS resolution of 1 host. at 17:37, 0.00s elapsed
+Initiating SYN Stealth Scan at 17:37
+Scanning 10.10.29.154 [1 port]
+Discovered open port 445/tcp on 10.10.29.154
+Completed SYN Stealth Scan at 17:37, 0.15s elapsed (1 total ports)
+NSE: Script scanning 10.10.29.154.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:37
+Completed NSE at 17:38, 8.20s elapsed
+Nmap scan report for 10.10.29.154
+Host is up, received timestamp-reply ttl 61 (0.21s latency).
+Scanned at 2021-01-08 17:37:54 EST for 9s
+
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack ttl 61
+
+Host script results:
+| smb-enum-domains: 
+|   Builtin
+|     Groups: n/a
+|     Users: n/a
+|     Creation time: unknown
+|     Passwords: min length: 5; min age: n/a days; max age: n/a days; history: n/a passwords
+|     Account lockout disabled
+|   KENOBI
+|     Groups: n/a
+|     Users: n/a
+|     Creation time: unknown
+|     Passwords: min length: 5; min age: n/a days; max age: n/a days; history: n/a passwords
+|_    Account lockout disabled
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 0.00s elapsed
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 9.00 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (84B)
+Starting Nmap 7.91SVN ( https://nmap.org ) at 2021-01-08 17:38 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 0.00s elapsed
+Initiating Ping Scan at 17:38
+Scanning 10.10.29.154 [4 ports]
+Completed Ping Scan at 17:38, 0.14s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:38
+Completed Parallel DNS resolution of 1 host. at 17:38, 0.01s elapsed
+Initiating SYN Stealth Scan at 17:38
+Scanning 10.10.29.154 [1 port]
+Discovered open port 445/tcp on 10.10.29.154
+Completed SYN Stealth Scan at 17:38, 0.14s elapsed (1 total ports)
+NSE: Script scanning 10.10.29.154.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 1.78s elapsed
+Nmap scan report for 10.10.29.154
+Host is up, received timestamp-reply ttl 61 (0.100s latency).
+Scanned at 2021-01-08 17:38:03 EST for 2s
+
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack ttl 61
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 0.00s elapsed
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.41 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (84B)
+Starting Nmap 7.91SVN ( https://nmap.org ) at 2021-01-08 17:38 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 0.00s elapsed
+Initiating Ping Scan at 17:38
+Scanning 10.10.29.154 [4 ports]
+Completed Ping Scan at 17:38, 0.13s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:38
+Completed Parallel DNS resolution of 1 host. at 17:38, 0.01s elapsed
+Initiating SYN Stealth Scan at 17:38
+Scanning 10.10.29.154 [1 port]
+Discovered open port 445/tcp on 10.10.29.154
+Completed SYN Stealth Scan at 17:38, 0.14s elapsed (1 total ports)
+NSE: Script scanning 10.10.29.154.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 1.46s elapsed
+Nmap scan report for 10.10.29.154
+Host is up, received timestamp-reply ttl 61 (0.095s latency).
+Scanned at 2021-01-08 17:38:06 EST for 1s
+
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack ttl 61
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 0.00s elapsed
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.08 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (84B)
+Starting Nmap 7.91SVN ( https://nmap.org ) at 2021-01-08 17:38 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 0.00s elapsed
+Initiating Ping Scan at 17:38
+Scanning 10.10.29.154 [4 ports]
+Completed Ping Scan at 17:38, 0.14s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:38
+Completed Parallel DNS resolution of 1 host. at 17:38, 0.00s elapsed
+Initiating SYN Stealth Scan at 17:38
+Scanning 10.10.29.154 [1 port]
+Discovered open port 445/tcp on 10.10.29.154
+Completed SYN Stealth Scan at 17:38, 0.14s elapsed (1 total ports)
+NSE: Script scanning 10.10.29.154.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:38
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+Completed NSE at 17:43, 300.52s elapsed
+Nmap scan report for 10.10.29.154
+Host is up, received timestamp-reply ttl 61 (0.098s latency).
+Scanned at 2021-01-08 17:38:08 EST for 300s
+
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack ttl 61
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:43
+Completed NSE at 17:43, 0.00s elapsed
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 301.15 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (84B)
+Starting Nmap 7.91SVN ( https://nmap.org ) at 2021-01-08 17:43 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:43
+Completed NSE at 17:43, 0.00s elapsed
+Initiating Ping Scan at 17:43
+Scanning 10.10.29.154 [4 ports]
+Completed Ping Scan at 17:43, 0.14s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:43
+Completed Parallel DNS resolution of 1 host. at 17:43, 0.00s elapsed
+Initiating SYN Stealth Scan at 17:43
+Scanning 10.10.29.154 [1 port]
+Discovered open port 445/tcp on 10.10.29.154
+Completed SYN Stealth Scan at 17:43, 0.15s elapsed (1 total ports)
+NSE: Script scanning 10.10.29.154.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:43
+Completed NSE at 17:43, 4.33s elapsed
+Nmap scan report for 10.10.29.154
+Host is up, received echo-reply ttl 61 (0.099s latency).
+Scanned at 2021-01-08 17:43:09 EST for 4s
+
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack ttl 61
+
+Host script results:
+| smb-enum-sessions: 
+|_  <nobody>
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:43
+Completed NSE at 17:43, 0.00s elapsed
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 4.99 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (72B)
+Starting Nmap 7.91SVN ( https://nmap.org ) at 2021-01-08 17:43 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:43
+Completed NSE at 17:43, 0.00s elapsed
+Initiating Ping Scan at 17:43
+Scanning 10.10.29.154 [4 ports]
+Completed Ping Scan at 17:43, 0.13s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:43
+Completed Parallel DNS resolution of 1 host. at 17:43, 0.00s elapsed
+Initiating SYN Stealth Scan at 17:43
+Scanning 10.10.29.154 [1 port]
+Discovered open port 445/tcp on 10.10.29.154
+Completed SYN Stealth Scan at 17:43, 0.15s elapsed (1 total ports)
+NSE: Script scanning 10.10.29.154.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:43
+Completed NSE at 17:43, 14.43s elapsed
+Nmap scan report for 10.10.29.154
+Host is up, received timestamp-reply ttl 61 (0.096s latency).
+Scanned at 2021-01-08 17:43:14 EST for 14s
+
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack ttl 61
+
+Host script results:
+| smb-enum-shares: 
+|   account_used: guest
+|   \\10.10.29.154\IPC$: 
+|     Type: STYPE_IPC_HIDDEN
+|     Comment: IPC Service (kenobi server (Samba, Ubuntu))
+|     Users: 1
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: READ/WRITE
+|     Current user access: READ/WRITE
+|   \\10.10.29.154\anonymous: 
+|     Type: STYPE_DISKTREE
+|     Comment: 
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\home\kenobi\share
+|     Anonymous access: READ/WRITE
+|     Current user access: READ/WRITE
+|   \\10.10.29.154\print$: 
+|     Type: STYPE_DISKTREE
+|     Comment: Printer Drivers
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\var\lib\samba\printers
+|     Anonymous access: <none>
+|_    Current user access: <none>
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:43
+Completed NSE at 17:43, 0.00s elapsed
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 15.04 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (84B)
+Starting Nmap 7.91SVN ( https://nmap.org ) at 2021-01-08 17:43 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:43
+Completed NSE at 17:43, 0.00s elapsed
+Initiating Ping Scan at 17:43
+Scanning 10.10.29.154 [4 ports]
+Completed Ping Scan at 17:43, 0.13s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:43
+Completed Parallel DNS resolution of 1 host. at 17:43, 0.00s elapsed
+Initiating SYN Stealth Scan at 17:43
+Scanning 10.10.29.154 [1 port]
+Discovered open port 445/tcp on 10.10.29.154
+Completed SYN Stealth Scan at 17:43, 0.14s elapsed (1 total ports)
+NSE: Script scanning 10.10.29.154.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:43
+Completed NSE at 17:43, 6.08s elapsed
+Nmap scan report for 10.10.29.154
+Host is up, received echo-reply ttl 61 (0.098s latency).
+Scanned at 2021-01-08 17:43:29 EST for 6s
+
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack ttl 61
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:43
+Completed NSE at 17:43, 0.00s elapsed
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 6.67 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (72B)
+Starting Nmap 7.91SVN ( https://nmap.org ) at 2021-01-08 17:43 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:43
+Completed NSE at 17:43, 0.00s elapsed
+Initiating Ping Scan at 17:43
+Scanning 10.10.29.154 [4 ports]
+Completed Ping Scan at 17:43, 0.14s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:43
+Completed Parallel DNS resolution of 1 host. at 17:43, 0.00s elapsed
+Initiating SYN Stealth Scan at 17:43
+Scanning 10.10.29.154 [1 port]
+Discovered open port 445/tcp on 10.10.29.154
+Completed SYN Stealth Scan at 17:43, 0.14s elapsed (1 total ports)
+NSE: Script scanning 10.10.29.154.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 17:43
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done
+NSE Timing: About 0.00% done

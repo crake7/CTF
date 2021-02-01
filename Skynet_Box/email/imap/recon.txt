@@ -1,0 +1,15 @@
+
+Return-Path: <serenakogan@skynet>
+X-Original-To: milesdyson
+Delivered-To: milesdyson@skynet
+Received: from localhost (localhost [IPv6:::1])
+     by skynet (Postfix) with SMTP id 026E439CE
+     for <milesdyson>; Tue, 17 Sep 2019 03:13:49 -0500 (CDT)
+Message-Id: <20190917081355.026E439CE@skynet>
+Date: Tue, 17 Sep 2019 03:13:49 -0500 (CDT)
+From: serenakogan@skynet
+
+
+
+We have changed your smb password after system malfunction.
+Password: )s{A&2Z=F^n_E.B` 

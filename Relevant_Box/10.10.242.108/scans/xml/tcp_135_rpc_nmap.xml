@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91SVN scan initiated Sun Jan 17 12:19:25 2021 as: nmap -vv -&#45;reason -Pn -sV -p 135 -&#45;script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/tcp_135_rpc_nmap.txt -oX /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/xml/tcp_135_rpc_nmap.xml 10.10.242.108 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 135 -&#45;script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/tcp_135_rpc_nmap.txt -oX /home/kali/tryhackme/Relevant_Box/10.10.242.108/scans/xml/tcp_135_rpc_nmap.xml 10.10.242.108" start="1610903965" startstr="Sun Jan 17 12:19:25 2021" version="7.91SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="135"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1610903966"/>
+<taskend task="NSE" time="1610903966"/>
+<taskbegin task="NSE" time="1610903966"/>
+<taskend task="NSE" time="1610903966"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1610903966"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1610903966"/>
+<taskbegin task="SYN Stealth Scan" time="1610903967"/>
+<taskend task="SYN Stealth Scan" time="1610903967" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1610903967"/>
+<taskend task="Service scan" time="1610903978" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1610903978"/>
+<taskend task="NSE" time="1610903988"/>
+<taskbegin task="NSE" time="1610903988"/>
+<taskend task="NSE" time="1610903989"/>
+<host starttime="1610903967" endtime="1610903989"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.242.108" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="msrpc" method="table" conf="3"/></port>
+</ports>
+<times srtt="95031" rttvar="95031" to="475155"/>
+</host>
+<taskbegin task="NSE" time="1610903989"/>
+<taskend task="NSE" time="1610903989"/>
+<taskbegin task="NSE" time="1610903989"/>
+<taskend task="NSE" time="1610903989"/>
+<runstats><finished time="1610903989" timestr="Sun Jan 17 12:19:49 2021" summary="Nmap done at Sun Jan 17 12:19:49 2021; 1 IP address (1 host up) scanned in 24.71 seconds" elapsed="24.71" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
