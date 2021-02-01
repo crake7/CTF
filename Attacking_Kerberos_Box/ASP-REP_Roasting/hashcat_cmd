@@ -1,0 +1,1 @@
+sudo hashcat -m 18200 hashes.txt wordlist.txt

