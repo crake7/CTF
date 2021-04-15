@@ -1,6 +1,6 @@
 <h1 align="center"> Capture The Flags </h1>
 
-<p>This repository contains several folders named after the pawned boxes in websites such as __Tryhackme__ and Hackthebox. 
+<p>This repository contains several folders named after the pawned boxes in websites such as <strong>Tryhackme</strong> and <stromg>Hackthebox.</strong> 
 Each folder is a mélange of data collected while solving the challenges. You will expect to find the following:</p>
 
 -Answers to some questions (not the actual flag);
