@@ -1,7 +1,7 @@
-<h1 align="center"> Capture The Flags 🐎</h1>
+<h1 align="center"> Capture The Flags </h1>
 
 <p>This repository contains several folders named after their (pawned) boxes in websites such as Tryhackme and Hackthebox. 
-Each folder is a mélange of data collected while solving the challenges. You will expect to find the following</p>:
+Each folder is a mélange of data collected while solving the challenges. You will expect to find the following:</p>
 
 -Answers to some questions (not the actual flag);
 
