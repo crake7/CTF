@@ -10,10 +10,10 @@ You will expect to find the following:</p>
     * Recon
     * Enumeration
     * Scanning
-    * Priv-Esc
+    * Exploits
+    * Privilege Escalation
     * Looting
-    * Post-Exploitation
-    * And more
+    * Post Exploitation
 
 * Useful commands that solved answers.
 
