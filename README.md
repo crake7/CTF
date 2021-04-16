@@ -17,4 +17,7 @@ You will expect to find the following:</p>
 
 * Useful commands that solved answers.
 
+Use it as an extra when solving these challenges. This information will guide you to the right direction but will not give you the answer to the problems. 
+For any questions, feel free to message me. 
+
 Have fun!
