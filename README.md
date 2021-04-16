@@ -6,7 +6,14 @@ You will expect to find the following:</p>
 
 * Answers to some questions (not the actual flag);
 
-* Tools and programs used to solve the challenge: Enumeration, Priv-Esc, Looting, Post-Exploitation, etc.
+* Tools and programs used to solve the challenge: 
+    * Recon
+    * Enumeration
+    * Scanning
+    * Priv-Esc
+    * Looting
+    * Post-Exploitation
+    * And more
 
 * Useful commands that solved answers.
 
