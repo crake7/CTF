@@ -17,8 +17,6 @@ You will expect to find the following:</p>
 
 * Useful commands that solved answers.
 
-* Recon data collected (mostly) during Enumeration.
-
 <p>Use it as an add-on when solving these challenges. This information will guide you to the right direction but will not give you the answer to the problems. 
 For any questions, feel free to message me. 
 
